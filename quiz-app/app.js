@@ -1,5 +1,22 @@
-/** @type {typeof window.QUIZ_SECTIONS} */
-const SECTIONS = window.QUIZ_SECTIONS || [];
+const BANK = {
+  TAHRIR: "tahrir",
+  SHAM: "sham",
+};
+
+const BANK_JSON = {
+  tahrir: "quiz-app/questions-tahrir-sinai.json",
+  sham: "quiz-app/questions-sham-el-nesim.json",
+};
+
+/** @type {string | null} */
+let quizBank = null;
+
+function getSections() {
+  if (quizBank === BANK.SHAM) {
+    return window.QUIZ_SECTIONS_SHAM || [];
+  }
+  return window.QUIZ_SECTIONS || [];
+}
 
 const STORAGE = {
   theme: "quiz_theme",
@@ -7,10 +24,19 @@ const STORAGE = {
   section: "quiz_section",
   type: "quiz_type",
   index: "quiz_index",
-  scores: "quiz_scores_v1",
+  bank: "quiz_bank",
+  scoresTahrir: "quiz_scores_tahrir",
+  scoresSham: "quiz_scores_sham",
+  scoresLegacy: "quiz_scores_v1",
 };
 
 const els = {
+  bankPicker: document.getElementById("bankPicker"),
+  appMain: document.getElementById("appMain"),
+  btnPickSham: document.getElementById("btnPickSham"),
+  btnPickTahrir: document.getElementById("btnPickTahrir"),
+  btnChangeBank: document.getElementById("btnChangeBank"),
+  topbarSubtitle: document.getElementById("topbarSubtitle"),
   loadStatus: document.getElementById("loadStatus"),
   statActive: document.getElementById("statActive"),
   sectionPanel: document.getElementById("sectionPanel"),
@@ -33,24 +59,63 @@ const els = {
   gradeAttempt: document.getElementById("gradeAttempt"),
   btnResetScore: document.getElementById("btnResetScore"),
   qScoreBadge: document.getElementById("qScoreBadge"),
+  examModal: document.getElementById("examModal"),
+  examModalBackdrop: document.getElementById("examModalBackdrop"),
+  btnOpenExam: document.getElementById("btnOpenExam"),
+  btnExamCancel: document.getElementById("btnExamCancel"),
+  btnExamStart: document.getElementById("btnExamStart"),
+  examCountInput: document.getElementById("examCountInput"),
+  examTypeSelect: document.getElementById("examTypeSelect"),
+  examPoolHint: document.getElementById("examPoolHint"),
+  examBanner: document.getElementById("examBanner"),
+  examBannerText: document.getElementById("examBannerText"),
+  btnExitExam: document.getElementById("btnExitExam"),
+  examSectionList: document.getElementById("examSectionList"),
+  btnExamSecAll: document.getElementById("btnExamSecAll"),
+  btnExamSecClear: document.getElementById("btnExamSecClear"),
 };
 
 let allQuestions = [];
 let activeList = [];
 let currentIndex = 0;
 let mode = "all";
-let sectionKey = SECTIONS[0]?.key ?? "";
+let sectionKey = "";
 let typeFilter = "";
 let revealVisible = false;
+let examSessionActive = false;
+/** وصف آخر فلتر نوع استُخدم في الاختبار (للشريط) */
+let examSessionTypeLabel = "";
+/** ملخص الأقسام المختارة في الاختبار */
+let examSessionSectionLabel = "";
 /** @type {Record<number, string[]>} */
 const orderShuffleState = {};
 
 /** @type {Record<string, "ok" | "bad">} — مفتاح = id السؤال */
 let scoreById = {};
 
-function loadScores() {
+function getScoresStorageKey() {
+  if (quizBank === BANK.SHAM) return STORAGE.scoresSham;
+  return STORAGE.scoresTahrir;
+}
+
+function migrateLegacyScores() {
   try {
-    const raw = localStorage.getItem(STORAGE.scores);
+    const legacy = localStorage.getItem(STORAGE.scoresLegacy);
+    if (legacy && !localStorage.getItem(STORAGE.scoresTahrir)) {
+      localStorage.setItem(STORAGE.scoresTahrir, legacy);
+    }
+  } catch {
+    /* ignore */
+  }
+}
+
+function loadScores() {
+  if (!quizBank) {
+    scoreById = {};
+    return;
+  }
+  try {
+    const raw = localStorage.getItem(getScoresStorageKey());
     const o = raw ? JSON.parse(raw) : {};
     scoreById = typeof o === "object" && o !== null ? o : {};
   } catch {
@@ -59,8 +124,9 @@ function loadScores() {
 }
 
 function persistScores() {
+  if (!quizBank) return;
   try {
-    localStorage.setItem(STORAGE.scores, JSON.stringify(scoreById));
+    localStorage.setItem(getScoresStorageKey(), JSON.stringify(scoreById));
   } catch {
     /* ignore quota */
   }
@@ -183,10 +249,12 @@ function toggleTheme() {
 }
 
 function loadPersistedFilters() {
+  const sections = getSections();
   const m = localStorage.getItem(STORAGE.mode);
   if (m === "section" || m === "all") mode = m;
   const s = localStorage.getItem(STORAGE.section);
-  if (s && SECTIONS.some((x) => x.key === s)) sectionKey = s;
+  if (s && sections.some((x) => x.key === s)) sectionKey = s;
+  else sectionKey = sections[0]?.key ?? "";
   const ty = localStorage.getItem(STORAGE.type);
   if (ty !== null) typeFilter = ty;
   const idx = parseInt(localStorage.getItem(STORAGE.index) || "0", 10);
@@ -200,15 +268,43 @@ function saveState() {
   localStorage.setItem(STORAGE.index, String(currentIndex));
 }
 
+/** @param {{ startId: number, endId: number, ranges?: [number, number][] }} s */
+function getSectionIdRanges(s) {
+  if (Array.isArray(s.ranges) && s.ranges.length) return s.ranges;
+  return [[s.startId, s.endId]];
+}
+
+/** @param {{ startId: number, endId: number, ranges?: [number, number][] }} s */
+function formatSectionRangeLabel(s, maxId) {
+  const ranges = getSectionIdRanges(s);
+  return ranges
+    .map(([a, b]) => {
+      const hugeEnd = b >= Number.MAX_SAFE_INTEGER - 1000;
+      const endDisp = hugeEnd ? (maxId > 0 ? maxId : "…") : b;
+      return a === endDisp ? `${a}` : `${a}–${endDisp}`;
+    })
+    .join("، ");
+}
+
 function populateSectionSelect() {
+  const sections = getSections();
   els.sectionSelect.innerHTML = "";
-  for (const s of SECTIONS) {
+  let maxId = 0;
+  if (allQuestions.length) {
+    maxId = Math.max(...allQuestions.map((q) => q.id));
+  }
+  for (const s of sections) {
     const opt = document.createElement("option");
     opt.value = s.key;
-    opt.textContent = `${s.titleAr} (${s.startId}–${s.endId})`;
+    opt.textContent = `${s.titleAr} (${formatSectionRangeLabel(s, maxId)})`;
     els.sectionSelect.appendChild(opt);
   }
-  els.sectionSelect.value = sectionKey;
+  if (!sections.some((x) => x.key === sectionKey)) {
+    sectionKey = sections[0]?.key ?? "";
+  }
+  if (sections.some((x) => x.key === sectionKey)) {
+    els.sectionSelect.value = sectionKey;
+  }
 }
 
 function collectTypes(data) {
@@ -245,38 +341,266 @@ function ingestQuestions(data) {
   validateQuestions(data);
   allQuestions = data;
   populateTypeFilter(collectTypes(data));
+  populateSectionSelect();
   els.loadStatus.textContent = `تم تحميل ${data.length} سؤالاً`;
   els.loadStatus.classList.remove("muted");
+  if (els.btnOpenExam) els.btnOpenExam.disabled = data.length === 0;
 }
 
-async function tryFetchQuestions() {
+async function tryFetchQuestionsForBank() {
+  if (!quizBank) return;
+  const path = BANK_JSON[quizBank];
   try {
-    const res = await fetch("quiz-app/questions.json", { cache: "no-store" });
+    const res = await fetch(path, { cache: "no-store" });
     if (!res.ok) throw new Error(String(res.status));
     const data = await res.json();
     ingestQuestions(data);
     rebuildActiveList(false);
   } catch {
-    els.loadStatus.textContent =
-      "لم يُحمّل quiz-app/questions.json. شغّل خادماً من جذر المشروع (مثلاً npx serve).";
+    els.loadStatus.textContent = `لم يُحمّل ${path}. شغّل خادماً من جذر المشروع (مثلاً npx serve).`;
     els.loadStatus.classList.add("muted");
+    if (els.btnOpenExam) els.btnOpenExam.disabled = true;
     render();
   }
 }
 
-function getSectionRange() {
-  const s = SECTIONS.find((x) => x.key === sectionKey);
-  return s ? { start: s.startId, end: s.endId } : null;
+function getCurrentSectionRanges() {
+  const s = getSections().find((x) => x.key === sectionKey);
+  return s ? getSectionIdRanges(s) : null;
+}
+
+function showBankPicker() {
+  if (els.bankPicker) els.bankPicker.classList.remove("hidden");
+  if (els.appMain) els.appMain.classList.add("hidden");
+}
+
+function hideBankPicker() {
+  if (els.bankPicker) els.bankPicker.classList.add("hidden");
+  if (els.appMain) els.appMain.classList.remove("hidden");
+}
+
+function updateHeroSubtitle() {
+  if (!els.topbarSubtitle) return;
+  if (quizBank === BANK.SHAM) {
+    els.topbarSubtitle.textContent = "شم النسيم — بنك أسئلة عربي";
+  } else if (quizBank === BANK.TAHRIR) {
+    els.topbarSubtitle.textContent = "تحرير سيناء — نموذج إنجليزي (شهادة أساسيات التحول الرقمي)";
+  } else {
+    els.topbarSubtitle.textContent = "شهادة أساسيات التحول الرقمي";
+  }
+}
+
+function clearOrderShuffleState() {
+  for (const k of Object.keys(orderShuffleState)) {
+    delete orderShuffleState[k];
+  }
+}
+
+function startBank(bank) {
+  quizBank = bank;
+  localStorage.setItem(STORAGE.bank, bank);
+  clearOrderShuffleState();
+  hideBankPicker();
+  migrateLegacyScores();
+  loadScores();
+  loadPersistedFilters();
+  populateSectionSelect();
+  if (getSections().some((x) => x.key === sectionKey)) {
+    els.sectionSelect.value = sectionKey;
+  }
+  updateHeroSubtitle();
+  els.loadStatus.textContent = "جاري تحميل الأسئلة…";
+  tryFetchQuestionsForBank();
+}
+
+function buildFilteredList(typeVal) {
+  let list = [...allQuestions].sort((a, b) => a.id - b.id);
+  if (mode === "section") {
+    const ranges = getCurrentSectionRanges();
+    if (ranges) list = list.filter((q) => ranges.some(([a, b]) => q.id >= a && q.id <= b));
+  }
+  if (typeVal) list = list.filter((q) => q.type === typeVal);
+  return list;
+}
+
+/** @param {string[]} sectionKeys */
+function buildExamPool(typeVal, sectionKeys) {
+  let list = [...allQuestions].sort((a, b) => a.id - b.id);
+  let keys = sectionKeys.filter(Boolean);
+  if (!keys.length) keys = ["all"];
+  const sections = getSections();
+  if (!keys.includes("all")) {
+    const ranges = [];
+    for (const key of keys) {
+      const s = sections.find((x) => x.key === key);
+      if (s) ranges.push(...getSectionIdRanges(s));
+    }
+    if (ranges.length) {
+      list = list.filter((q) => ranges.some(([a, b]) => q.id >= a && q.id <= b));
+    } else {
+      list = [];
+    }
+  }
+  if (typeVal) list = list.filter((q) => q.type === typeVal);
+  return list;
+}
+
+function getExamSelectedSectionKeys() {
+  if (!els.examSectionList) return [];
+  return [...els.examSectionList.querySelectorAll("input[type=checkbox]:checked")].map((cb) => cb.value);
+}
+
+/** @param {string[]} keys */
+function formatExamSectionSummary(keys) {
+  if (!keys.length || keys.includes("all")) return "كل الملف";
+  if (keys.length === 1) {
+    const s = getSections().find((x) => x.key === keys[0]);
+    return s ? s.titleAr : keys[0];
+  }
+  return `${keys.length} أقسام`;
+}
+
+function populateExamSectionList() {
+  const container = els.examSectionList;
+  if (!container) return;
+  container.innerHTML = "";
+  const sections = getSections();
+  const mkRow = (key, title, checked) => {
+    const lab = document.createElement("label");
+    lab.className = "exam-section-row";
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.value = key;
+    cb.checked = checked;
+    const span = document.createElement("span");
+    span.textContent = title;
+    lab.appendChild(cb);
+    lab.appendChild(span);
+    container.appendChild(lab);
+  };
+  if (!sections.some((s) => s.key === "all")) {
+    mkRow("all", "كل الملف (جميع الأقسام)", true);
+  }
+  for (const s of sections) {
+    mkRow(s.key, s.titleAr, s.key === "all");
+  }
+}
+
+function examSectionsSelectAll() {
+  els.examSectionList?.querySelectorAll("input[type=checkbox]").forEach((cb) => {
+    cb.checked = true;
+  });
+  updateExamModalPoolHint();
+}
+
+function examSectionsResetToAll() {
+  const cbs = [...(els.examSectionList?.querySelectorAll("input[type=checkbox]") || [])];
+  cbs.forEach((cb) => {
+    cb.checked = false;
+  });
+  const allCb = cbs.find((c) => c.value === "all");
+  if (allCb) allCb.checked = true;
+  else if (cbs[0]) cbs[0].checked = true;
+  updateExamModalPoolHint();
+}
+
+function updateExamBanner() {
+  if (!els.examBanner || !els.examBannerText) return;
+  if (examSessionActive && activeList.length) {
+    els.examBanner.classList.remove("hidden");
+    els.examBannerText.textContent = `اختبار عشوائي · ${examSessionSectionLabel} · ${examSessionTypeLabel} · ${activeList.length} سؤالاً`;
+  } else {
+    els.examBanner.classList.add("hidden");
+    els.examBannerText.textContent = "";
+  }
+}
+
+function populateExamTypeSelect() {
+  if (!els.examTypeSelect) return;
+  const types = collectTypes(allQuestions);
+  const cur = els.examTypeSelect.value;
+  els.examTypeSelect.innerHTML = '<option value="">كل الأنواع</option>';
+  for (const t of types) {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t;
+    els.examTypeSelect.appendChild(opt);
+  }
+  if (types.includes(cur)) els.examTypeSelect.value = cur;
+}
+
+function updateExamModalPoolHint() {
+  if (!els.examPoolHint || !els.examCountInput || !els.examTypeSelect) return;
+  let secKeys = getExamSelectedSectionKeys();
+  if (!secKeys.length) secKeys = ["all"];
+  const pool = buildExamPool(els.examTypeSelect.value, secKeys);
+  const n = pool.length;
+  if (n === 0) {
+    els.examPoolHint.textContent =
+      "لا توجد أسئلة مطابقة لهذا الجمع (أقسام + نوع). غيّر التحديد أو النوع.";
+    els.examCountInput.max = "1";
+    els.examCountInput.value = "1";
+    return;
+  }
+  const secSummary = formatExamSectionSummary(secKeys);
+  els.examPoolHint.textContent = `النطاق: ${secSummary} — متاح ${n} سؤالاً للاختيار العشوائي.`;
+  els.examCountInput.max = String(n);
+  const want = parseInt(els.examCountInput.value, 10);
+  const def = Number.isNaN(want) || want < 1 ? Math.min(10, n) : want;
+  els.examCountInput.value = String(Math.min(def, n));
+}
+
+function openExamModal() {
+  if (!els.examModal || !allQuestions.length) return;
+  populateExamSectionList();
+  populateExamTypeSelect();
+  updateExamModalPoolHint();
+  els.examModal.classList.remove("hidden");
+  els.examCountInput?.focus();
+}
+
+function closeExamModal() {
+  els.examModal?.classList.add("hidden");
+}
+
+function startRandomExam() {
+  if (!els.examTypeSelect || !els.examCountInput) return;
+  const typeVal = els.examTypeSelect.value;
+  let secKeys = getExamSelectedSectionKeys();
+  if (!secKeys.length) secKeys = ["all"];
+  const pool = buildExamPool(typeVal, secKeys);
+  if (!pool.length) {
+    alert("لا توجد أسئلة مطابقة. غيّر الأقسام أو نوع السؤال.");
+    return;
+  }
+  let n = parseInt(els.examCountInput.value, 10);
+  if (Number.isNaN(n) || n < 1) n = 1;
+  n = Math.min(n, pool.length);
+  examSessionTypeLabel = typeVal || "كل الأنواع";
+  examSessionSectionLabel = formatExamSectionSummary(secKeys);
+  clearOrderShuffleState();
+  activeList = shuffle(pool).slice(0, n);
+  examSessionActive = true;
+  currentIndex = 0;
+  closeExamModal();
+  saveState();
+  updateExamBanner();
+  render();
+}
+
+function exitExamSession() {
+  examSessionTypeLabel = "";
+  examSessionSectionLabel = "";
+  currentIndex = 0;
+  rebuildActiveList(true);
 }
 
 function rebuildActiveList(resetIndex) {
-  let list = [...allQuestions].sort((a, b) => a.id - b.id);
-  if (mode === "section") {
-    const r = getSectionRange();
-    if (r) list = list.filter((q) => q.id >= r.start && q.id <= r.end);
-  }
-  if (typeFilter) list = list.filter((q) => q.type === typeFilter);
-  activeList = list;
+  examSessionActive = false;
+  examSessionTypeLabel = "";
+  examSessionSectionLabel = "";
+  updateExamBanner();
+  activeList = buildFilteredList(typeFilter);
   if (resetIndex) currentIndex = 0;
   else if (currentIndex >= activeList.length) {
     currentIndex = Math.max(0, activeList.length - 1);
@@ -341,7 +665,9 @@ function render() {
     els.qId.textContent = "#";
     els.qText.textContent =
       allQuestions.length === 0
-        ? "تأكد أن quiz-app/questions.json موجود وشغّل خادماً من جذر المشروع."
+        ? quizBank
+          ? `تأكد أن ملف البنك موجود (${BANK_JSON[quizBank] || ""}) وشغّل خادماً من جذر المشروع.`
+          : "اختر بنك الأسئلة من الشاشة الأولى."
         : "لا توجد أسئلة تطابق الفلتر الحالي. غيّر القسم أو نوع السؤال.";
     els.qInteractive.innerHTML = "";
     els.btnPrev.disabled = true;
@@ -620,8 +946,69 @@ function wireEvents() {
 
   if (els.btnResetScore) {
     els.btnResetScore.addEventListener("click", () => {
-      if (confirm("مسح كل النتائج والدرجة المحفوظة على هذا المتصفح؟")) {
+      if (confirm("مسح كل النتائج والدرجة المحفوظة لهذا البنك على هذا المتصفح؟")) {
         clearAllScores();
+      }
+    });
+  }
+
+  if (els.btnPickSham) {
+    els.btnPickSham.addEventListener("click", () => startBank(BANK.SHAM));
+  }
+  if (els.btnPickTahrir) {
+    els.btnPickTahrir.addEventListener("click", () => startBank(BANK.TAHRIR));
+  }
+  if (els.btnOpenExam) {
+    els.btnOpenExam.addEventListener("click", () => openExamModal());
+  }
+  if (els.btnExamCancel) {
+    els.btnExamCancel.addEventListener("click", () => closeExamModal());
+  }
+  if (els.examModalBackdrop) {
+    els.examModalBackdrop.addEventListener("click", () => closeExamModal());
+  }
+  if (els.btnExamStart) {
+    els.btnExamStart.addEventListener("click", () => startRandomExam());
+  }
+  if (els.examTypeSelect) {
+    els.examTypeSelect.addEventListener("change", () => updateExamModalPoolHint());
+  }
+  if (els.examSectionList) {
+    els.examSectionList.addEventListener("change", () => updateExamModalPoolHint());
+  }
+  if (els.btnExamSecAll) {
+    els.btnExamSecAll.addEventListener("click", () => examSectionsSelectAll());
+  }
+  if (els.btnExamSecClear) {
+    els.btnExamSecClear.addEventListener("click", () => examSectionsResetToAll());
+  }
+  if (els.btnExitExam) {
+    els.btnExitExam.addEventListener("click", () => exitExamSession());
+  }
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && els.examModal && !els.examModal.classList.contains("hidden")) {
+      closeExamModal();
+    }
+  });
+
+  if (els.btnChangeBank) {
+    els.btnChangeBank.addEventListener("click", () => {
+      if (confirm("تغيير البنك يعيد تحميل الأسئلة. المتابعة؟")) {
+        localStorage.removeItem(STORAGE.bank);
+        quizBank = null;
+        allQuestions = [];
+        activeList = [];
+        currentIndex = 0;
+        examSessionActive = false;
+        examSessionTypeLabel = "";
+        examSessionSectionLabel = "";
+        updateExamBanner();
+        clearOrderShuffleState();
+        scoreById = {};
+        showBankPicker();
+        els.qText.textContent = "اختر بنك الأسئلة للبدء.";
+        els.loadStatus.textContent = "اختر البنك لتحميل الأسئلة…";
+        render();
       }
     });
   }
@@ -629,13 +1016,23 @@ function wireEvents() {
 
 function init() {
   loadTheme();
-  loadScores();
-  populateSectionSelect();
-  loadPersistedFilters();
-  if (mode === "section") els.sectionSelect.value = sectionKey;
-
   wireEvents();
-  tryFetchQuestions();
+  const saved = localStorage.getItem(STORAGE.bank);
+  if (saved === BANK.TAHRIR || saved === BANK.SHAM) {
+    quizBank = saved;
+    migrateLegacyScores();
+    hideBankPicker();
+    loadScores();
+    loadPersistedFilters();
+    populateSectionSelect();
+    if (getSections().some((x) => x.key === sectionKey)) {
+      els.sectionSelect.value = sectionKey;
+    }
+    updateHeroSubtitle();
+    tryFetchQuestionsForBank();
+  } else {
+    showBankPicker();
+  }
 }
 
 init();

@@ -728,3 +728,194 @@ button:focus:not(:focus-visible) {
   font-family: var(--font-body);
   color: var(--color-text);
 }
+
+/* منتقي البنك */
+.bank-picker {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+  background: rgba(17, 24, 39, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.bank-picker.hidden {
+  display: none;
+}
+
+.bank-picker__inner {
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+}
+
+.bank-picker__title {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-xl);
+  font-weight: 800;
+  font-family: var(--font-display);
+}
+
+.bank-picker__hint {
+  margin: 0 0 var(--space-5);
+  font-size: var(--text-sm);
+}
+
+.bank-picker__choices {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.bank-picker__btn {
+  width: 100%;
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-base);
+}
+
+/* اختبار عشوائي */
+.exam-hint {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.exam-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: linear-gradient(135deg, rgba(128, 161, 193, 0.2), rgba(250, 212, 192, 0.35));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-tile);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.exam-banner.hidden {
+  display: none;
+}
+
+.exam-banner__text {
+  flex: 1;
+  min-width: 12rem;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.modal__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  padding: var(--space-5);
+  box-shadow: var(--shadow-tile);
+}
+
+.modal__title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-lg);
+  font-weight: 800;
+}
+
+.modal__lead {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.exam-pool-hint {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: flex-end;
+  margin-top: var(--space-5);
+}
+
+.input-num {
+  width: 100%;
+  max-width: 8rem;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  background: var(--color-tile-elevated);
+  color: var(--color-text);
+}
+
+.exam-sections-field {
+  border: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+}
+
+.exam-sections-field legend {
+  padding: 0;
+  margin-bottom: var(--space-2);
+}
+
+.exam-sections-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.exam-section-list {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  background: var(--color-surface);
+}
+
+.exam-section-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+.exam-section-row:hover {
+  background: rgba(128, 161, 193, 0.12);
+}
+
+.exam-section-row input {
+  margin-top: 0.2em;
+  flex-shrink: 0;
+}

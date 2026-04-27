@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تدريب الأسئلة — تحرير سيناء</title>
+    <title>تدريب الأسئلة — تحرير سيناء / شم النسيم</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,88 +13,149 @@
     <link rel="stylesheet" href="quiz-app/styles.css" />
   </head>
   <body>
-    <div class="app bento">
-      <header class="bento__header bento-tile bento-tile--hero">
-        <div class="topbar__brand">
-          <span class="topbar__title">تدريب الأسئلة</span>
-          <span class="topbar__subtitle">شهادة أساسيات التحول الرقمي — نموذج إنجليزي</span>
+    <div id="bankPicker" class="bank-picker" role="dialog" aria-modal="true" aria-labelledby="bankPickerTitle">
+      <div class="bank-picker__inner bento-tile">
+        <h1 id="bankPickerTitle" class="bank-picker__title">اختر بنك الأسئلة</h1>
+        <p class="bank-picker__hint muted">يُحفظ اختيارك على هذا المتصفح. يمكنك تغييره لاحقاً من أعلى الصفحة.</p>
+        <div class="bank-picker__choices">
+          <button type="button" class="btn btn--primary bank-picker__btn" id="btnPickSham" data-bank="sham">
+            شم النسيم (عربي)
+          </button>
+          <button type="button" class="btn btn--secondary bank-picker__btn" id="btnPickTahrir" data-bank="tahrir">
+            تحرير سيناء (إنجليزي)
+          </button>
         </div>
-        <div class="topbar__actions">
-          <button type="button" class="btn btn--ghost" id="btnTheme" aria-label="تبديل الوضع الليلي">وضع داكن</button>
-        </div>
-      </header>
+      </div>
+    </div>
 
-      <aside class="bento__side">
-        <div class="bento-tile bento-tile--accent">
-          <div class="panel">
-            <h2 class="panel__title">وضع العرض</h2>
-            <div class="segmented" role="group" aria-label="وضع القائمة">
-              <button type="button" class="segmented__btn is-active" data-mode="all">كل الأسئلة بالترتيب</button>
-              <button type="button" class="segmented__btn" data-mode="section">حسب القسم</button>
+    <div id="appMain" class="hidden">
+      <div class="app bento">
+        <header class="bento__header bento-tile bento-tile--hero">
+          <div class="topbar__brand">
+            <span class="topbar__title">تدريب الأسئلة</span>
+            <span class="topbar__subtitle" id="topbarSubtitle">شهادة أساسيات التحول الرقمي</span>
+          </div>
+          <div class="topbar__actions">
+            <button type="button" class="btn btn--ghost" id="btnChangeBank">تغيير البنك</button>
+            <button type="button" class="btn btn--ghost" id="btnTheme" aria-label="تبديل الوضع الليلي">وضع داكن</button>
+          </div>
+        </header>
+
+        <aside class="bento__side">
+          <div class="bento-tile bento-tile--accent">
+            <div class="panel">
+              <h2 class="panel__title">وضع العرض</h2>
+              <div class="segmented" role="group" aria-label="وضع القائمة">
+                <button type="button" class="segmented__btn is-active" data-mode="all">كل الأسئلة بالترتيب</button>
+                <button type="button" class="segmented__btn" data-mode="section">حسب القسم</button>
+              </div>
+            </div>
+
+            <div class="panel panel--section hidden" id="sectionPanel">
+              <label class="field">
+                <span class="field__label">القسم</span>
+                <select id="sectionSelect" class="select"></select>
+              </label>
+            </div>
+
+            <div class="panel">
+              <label class="field">
+                <span class="field__label">نوع السؤال</span>
+                <select id="typeFilter" class="select">
+                  <option value="">كل الأنواع</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="panel">
+              <p class="field__label">اختبار سريع</p>
+              <p class="muted exam-hint">من النافذة: <strong>أقسام</strong> (واحد أو أكثر)، العدد، النوع، وترتيب عشوائي.</p>
+              <button type="button" class="btn btn--primary" id="btnOpenExam">ابدأ اختباراً عشوائياً…</button>
             </div>
           </div>
 
-          <div class="panel panel--section hidden" id="sectionPanel">
-            <label class="field">
-              <span class="field__label">القسم</span>
-              <select id="sectionSelect" class="select"></select>
-            </label>
+          <div class="bento-tile bento-tile--stats">
+            <div class="grade-panel" id="gradePanel" aria-live="polite">
+              <h3 class="grade-panel__heading">درجتك</h3>
+              <p class="grade-panel__percent" id="gradePercent">—</p>
+              <p class="grade-panel__detail" id="gradeDetail">بعد الإجابة أو التحقق تُحسب النقاط تلقائياً.</p>
+              <p class="grade-panel__attempt muted" id="gradeAttempt"></p>
+              <button type="button" class="btn btn--ghost btn--sm" id="btnResetScore">مسح النتائج المحفوظة</button>
+            </div>
+            <div class="panel panel--stats">
+              <p class="stats-line"><strong id="statActive">0</strong> سؤال في القائمة الحالية</p>
+              <p class="stats-line muted" id="loadStatus">اختر البنك لتحميل الأسئلة…</p>
+            </div>
+          </div>
+        </aside>
+
+        <div class="bento__content">
+          <div id="examBanner" class="exam-banner hidden" role="status">
+            <span class="exam-banner__text" id="examBannerText"></span>
+            <button type="button" class="btn btn--ghost btn--sm" id="btnExitExam">إنهاء الاختبار والعودة للقائمة</button>
+          </div>
+          <div class="bento-tile bento-tile--narrow">
+            <div class="progress-wrap">
+              <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+              <span class="progress-text" id="progressText">0 / 0</span>
+            </div>
           </div>
 
-          <div class="panel">
-            <label class="field">
-              <span class="field__label">نوع السؤال</span>
-              <select id="typeFilter" class="select">
-                <option value="">كل الأنواع</option>
-              </select>
-            </label>
-          </div>
+          <article class="bento-tile bento-tile--main card" id="questionCard">
+            <div class="card__meta">
+              <span class="badge" id="qType">—</span>
+              <span class="badge badge--id" id="qId">#</span>
+              <span class="badge badge--score hidden" id="qScoreBadge" aria-hidden="true"></span>
+            </div>
+            <h1 class="card__question" id="qText">اختر بنك الأسئلة للبدء.</h1>
+
+            <div class="card__body" id="qInteractive"></div>
+
+            <div class="card__reveal hidden" id="revealBox">
+              <h3 class="reveal__title">الإجابة النموذجية</h3>
+              <div class="reveal__answer" id="revealAnswer"></div>
+            </div>
+
+            <div class="card__footer">
+              <button type="button" class="btn btn--secondary" id="btnPrev">السابق</button>
+              <button type="button" class="btn" id="btnReveal">كشف الإجابة</button>
+              <button type="button" class="btn btn--primary" id="btnNext">التالي</button>
+            </div>
+          </article>
         </div>
+      </div>
+    </div>
 
-        <div class="bento-tile bento-tile--stats">
-          <div class="grade-panel" id="gradePanel" aria-live="polite">
-            <h3 class="grade-panel__heading">درجتك</h3>
-            <p class="grade-panel__percent" id="gradePercent">—</p>
-            <p class="grade-panel__detail" id="gradeDetail">بعد الإجابة أو التحقق تُحسب النقاط تلقائياً.</p>
-            <p class="grade-panel__attempt muted" id="gradeAttempt"></p>
-            <button type="button" class="btn btn--ghost btn--sm" id="btnResetScore">مسح النتائج المحفوظة</button>
+    <div id="examModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="examModalTitle">
+      <div class="modal__backdrop" id="examModalBackdrop" tabindex="-1"></div>
+      <div class="modal__panel bento-tile">
+        <h2 id="examModalTitle" class="modal__title">اختبار عشوائي</h2>
+        <p class="muted modal__lead">
+          حدّد <strong>قسماً واحداً أو أكثر</strong> (يُدمَج النطاق)، ثم عدد الأسئلة والنوع. لا يعتمد على الشريط الجانبي.
+        </p>
+        <fieldset class="field exam-sections-field">
+          <legend class="field__label">الأقسام</legend>
+          <div class="exam-sections-toolbar">
+            <button type="button" class="btn btn--ghost btn--sm" id="btnExamSecAll">تحديد الكل</button>
+            <button type="button" class="btn btn--ghost btn--sm" id="btnExamSecClear">كل الملف فقط</button>
           </div>
-          <div class="panel panel--stats">
-            <p class="stats-line"><strong id="statActive">0</strong> سؤال في القائمة الحالية</p>
-            <p class="stats-line muted" id="loadStatus">جاري تحميل الأسئلة…</p>
-          </div>
+          <div id="examSectionList" class="exam-section-list" role="group" aria-label="اختيار الأقسام"></div>
+        </fieldset>
+        <p class="exam-pool-hint" id="examPoolHint"></p>
+        <label class="field">
+          <span class="field__label">عدد الأسئلة</span>
+          <input type="number" id="examCountInput" class="input-num" min="1" value="10" />
+        </label>
+        <label class="field">
+          <span class="field__label">نوع السؤال في الاختبار</span>
+          <select id="examTypeSelect" class="select">
+            <option value="">كل الأنواع</option>
+          </select>
+        </label>
+        <div class="modal__actions">
+          <button type="button" class="btn btn--secondary" id="btnExamCancel">إلغاء</button>
+          <button type="button" class="btn btn--primary" id="btnExamStart">ابدأ الاختبار</button>
         </div>
-      </aside>
-
-      <div class="bento__content">
-        <div class="bento-tile bento-tile--narrow">
-          <div class="progress-wrap">
-            <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
-            <span class="progress-text" id="progressText">0 / 0</span>
-          </div>
-        </div>
-
-        <article class="bento-tile bento-tile--main card" id="questionCard">
-          <div class="card__meta">
-            <span class="badge" id="qType">—</span>
-            <span class="badge badge--id" id="qId">#</span>
-            <span class="badge badge--score hidden" id="qScoreBadge" aria-hidden="true"></span>
-          </div>
-          <h1 class="card__question" id="qText">شغّل الصفحة من خادم محلي على جذر المشروع لتحميل quiz-app/questions.json.</h1>
-
-          <div class="card__body" id="qInteractive"></div>
-
-          <div class="card__reveal hidden" id="revealBox">
-            <h3 class="reveal__title">الإجابة النموذجية</h3>
-            <div class="reveal__answer" id="revealAnswer"></div>
-          </div>
-
-          <div class="card__footer">
-            <button type="button" class="btn btn--secondary" id="btnPrev">السابق</button>
-            <button type="button" class="btn" id="btnReveal">كشف الإجابة</button>
-            <button type="button" class="btn btn--primary" id="btnNext">التالي</button>
-          </div>
-        </article>
       </div>
     </div>
 
