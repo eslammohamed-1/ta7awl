@@ -3,3 +3,8 @@ Thumbs.db
 *.log
 .cursor/
 terminals/
+
+# أرشيف محلي بأسماء طويلة جداً — تفشل checkout على CI/Linux (حد اسم الملف ~255 بايت).
+# المعتمد في التطبيق: quiz-app/questions-sham-el-nesim.json و quiz-app/questions-tahrir-sinai.json
+شم النسيم*
+تحرير سيناء*
