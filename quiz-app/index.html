@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تدريب الأسئلة — تحرير سيناء</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app bento">
+      <header class="bento__header bento-tile bento-tile--hero">
+        <div class="topbar__brand">
+          <span class="topbar__title">تدريب الأسئلة</span>
+          <span class="topbar__subtitle">شهادة أساسيات التحول الرقمي — نموذج إنجليزي</span>
+        </div>
+        <div class="topbar__actions">
+          <button type="button" class="btn btn--ghost" id="btnTheme" aria-label="تبديل الوضع الليلي">وضع داكن</button>
+        </div>
+      </header>
+
+      <aside class="bento__side">
+        <div class="bento-tile bento-tile--accent">
+          <div class="panel">
+            <h2 class="panel__title">وضع العرض</h2>
+            <div class="segmented" role="group" aria-label="وضع القائمة">
+              <button type="button" class="segmented__btn is-active" data-mode="all">كل الأسئلة بالترتيب</button>
+              <button type="button" class="segmented__btn" data-mode="section">حسب القسم</button>
+            </div>
+          </div>
+
+          <div class="panel panel--section hidden" id="sectionPanel">
+            <label class="field">
+              <span class="field__label">القسم</span>
+              <select id="sectionSelect" class="select"></select>
+            </label>
+          </div>
+
+          <div class="panel">
+            <label class="field">
+              <span class="field__label">نوع السؤال</span>
+              <select id="typeFilter" class="select">
+                <option value="">كل الأنواع</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="bento-tile bento-tile--stats">
+          <div class="grade-panel" id="gradePanel" aria-live="polite">
+            <h3 class="grade-panel__heading">درجتك</h3>
+            <p class="grade-panel__percent" id="gradePercent">—</p>
+            <p class="grade-panel__detail" id="gradeDetail">بعد الإجابة أو التحقق تُحسب النقاط تلقائياً.</p>
+            <p class="grade-panel__attempt muted" id="gradeAttempt"></p>
+            <button type="button" class="btn btn--ghost btn--sm" id="btnResetScore">مسح النتائج المحفوظة</button>
+          </div>
+          <div class="panel panel--stats">
+            <p class="stats-line"><strong id="statActive">0</strong> سؤال في القائمة الحالية</p>
+            <p class="stats-line muted" id="loadStatus">جاري تحميل الأسئلة…</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="bento__content">
+        <div class="bento-tile bento-tile--narrow">
+          <div class="progress-wrap">
+            <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            <span class="progress-text" id="progressText">0 / 0</span>
+          </div>
+        </div>
+
+        <article class="bento-tile bento-tile--main card" id="questionCard">
+          <div class="card__meta">
+            <span class="badge" id="qType">—</span>
+            <span class="badge badge--id" id="qId">#</span>
+            <span class="badge badge--score hidden" id="qScoreBadge" aria-hidden="true"></span>
+          </div>
+          <h1 class="card__question" id="qText">شغّل الصفحة من خادم محلي (من مجلد التطبيق) لتحميل الأسئلة من questions.json.</h1>
+
+          <div class="card__body" id="qInteractive"></div>
+
+          <div class="card__reveal hidden" id="revealBox">
+            <h3 class="reveal__title">الإجابة النموذجية</h3>
+            <div class="reveal__answer" id="revealAnswer"></div>
+          </div>
+
+          <div class="card__footer">
+            <button type="button" class="btn btn--secondary" id="btnPrev">السابق</button>
+            <button type="button" class="btn" id="btnReveal">كشف الإجابة</button>
+            <button type="button" class="btn btn--primary" id="btnNext">التالي</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <script src="sections.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2726 @@
+[
+  {
+    "id": 1,
+    "question": "What is a computer hacker? / ما المقصود بـ \"مخترق جهاز الكمبيوتر\"؟",
+    "answer": "A person who uses a computer to illegally hack into your computer and steal your personal information. / شخص يستخدم جهاز كمبيوتر في اختراق جهاز الكمبيوتر الخاص بك بشكل غير قانوني وسرقة المعلومات الخاصة بك.",
+    "type": "مقالي"
+  },
+  {
+    "id": 2,
+    "question": "What measures can reduce the social engineering attack surface? / ما هي التدابير التي يمكن اتخاذها للحد من سطح هجوم الهندسة الاجتماعية؟",
+    "answer": "Minimizing the transmission of personal information. / الحد من نقل المعلومات الشخصية.",
+    "type": "مقالي"
+  },
+  {
+    "id": 3,
+    "question": "What is malicious software that infects computers? / ما هي البرمجيات الضارة التي تصيب أجهزة الكمبيوتر؟",
+    "answer": "Programs specifically designed to disrupt, damage, or gain unauthorized access to a computer system. / برامج مصممة خصيصاً لتعطيل نظام الكمبيوتر أو إتلافه أو الوصول بشكل غير مصرح به إليه.",
+    "type": "مقالي"
+  },
+  {
+    "id": 4,
+    "question": "What is encryption? / ما المقصود بـ \"التشفير\"؟",
+    "answer": "Converting information or data into code to prevent unauthorized access. / تحويل المعلومات أو البيانات إلى كود (رمز) بهدف منع الوصول غير المصرح به لها.",
+    "type": "مقالي"
+  },
+  {
+    "id": 5,
+    "question": "What is a cyberattack? / ما هو الهجوم السيبراني؟",
+    "answer": "An attempt to damage or destroy a computer network or system carried out by attackers. / محاولة إتلاف أو تدمير شبكة أو نظام كمبيوتر تتم بواسطة المهاجمين.",
+    "type": "مقالي"
+  },
+  {
+    "id": 6,
+    "question": "What is cybersecurity? / ما المقصود بـ \"الأمن السيبراني\"؟",
+    "answer": "The state of protection against criminal or unauthorized use of electronic data. / حالة التأمين والحماية من الاستخدام الإجرامي أو غير المصرح به للبيانات الإلكترونية.",
+    "type": "مقالي"
+  },
+  {
+    "id": 7,
+    "question": "What is a password? / ما هي كلمة المرور؟",
+    "answer": "A secret word or phrase used to access your online account. / هي كلمة أو عبارة سرية يجب أن تستخدمها حتى يمكنك الدخول على حسابك على شبكة الإنترنت.",
+    "type": "مقالي"
+  },
+  {
+    "id": 8,
+    "question": "What is a computer virus? / ما المقصود بـ \"فيروس الكمبيوتر\"؟",
+    "answer": "A piece of code that can copy itself and harm a device, such as damaging the system or destroying data. / جزء من التعليمات البرمجية القادر على نسخ نفسه، والذي يكون له تأثير ضار على الجهاز، مثل إتلاف النظام أو تدمير البيانات.",
+    "type": "مقالي"
+  },
+  {
+    "id": 9,
+    "question": "What is social engineering? / ما المقصود بـ \"الهندسة الاجتماعية\"؟",
+    "answer": "Manipulating people over the internet to reveal confidential information. / التلاعب بالأشخاص عبر شبكة الإنترنت بهدف الكشف عن معلومات سرية.",
+    "type": "مقالي"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is not a hacker? / أي مما يلي لا يعد مخترقاً للأجهزة؟",
+    "answer": "Blue hat hacker / مخترق القبعة الزرقاء",
+    "type": "اختيار من متعدد"
+  },
+  {
+    "id": 11,
+    "question": "What is a computer backup? / ما المقصود بأخذ نسخة احتياطية لجهاز الكمبيوتر؟",
+    "answer": "Copying original files stored on a laptop, desktop, or external hard drive. / عندما نقوم بنسخ الملفات الأصلية المخزنة على جهاز الكمبيوتر المحمول أو سطح المكتب أو محرك الأقراص الصلبة الخارجي.",
+    "type": "مقالي"
+  },
+  {
+    "id": 12,
+    "question": "What is ransomware? / ما هي برمجيات الفدية؟",
+    "answer": "A type of malicious software designed to block access to a computer system until a certain amount of money is paid. / نوع من البرمجيات الضارة المصممة لمنع الوصول إلى نظام الكمبيوتر حتى يتم دفع مبلغ مالي معين.",
+    "type": "مقالي"
+  },
+  {
+    "id": 13,
+    "question": "It is a type of email virus that replicates itself, steals information, or damages a computer system. / هي فيروسات البريد الإلكتروني التي تقوم بتكرار نفسها أو سرقة المعلومات أو الإضرار بنظام الكمبيوتر.",
+    "answer": "Computer Worms / ديدان الكمبيوتر",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 14,
+    "question": "What is the biggest threat to cybersecurity? / ما هو أكبر تهديد للأمن السيبراني؟",
+    "answer": "The human factor / العامل البشري",
+    "type": "مقالي"
+  },
+  {
+    "id": 15,
+    "question": "Attacks in which attackers attempt to discover passwords for protected online accounts and social media platforms. / هجمات يقوم بها مهاجمون يمكنهم تحديد أو معرفة كلمات المرور الخاصة بالمناطق الإلكترونية المحمية ومنصات التواصل الاجتماعي.",
+    "answer": "Password Attacks / هجمات كلمات المرور",
+    "type": "مقالي"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is an example of authentication? / أي مما يلي يعتبر مثالاً للمصادقة؟",
+    "answer": "Username / اسم المستخدم",
+    "type": "اختيار من متعدد"
+  },
+  {
+    "id": 17,
+    "question": "The Information Security Triad (CIA Triad) model includes data confidentiality, integrity, and availability / يتضمن نموذج ثالوث أمن المعلومات سرية البيانات وسلامتها وتوافرها.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 18,
+    "question": "The Information Security Triad (CIA Triad) model focuses on data availability, integrity, and reliability. / يركز نموذج ثالوث أمن المعلومات على توافر البيانات وسلامتها واعتماد صحتها.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 19,
+    "question": "The Information Security Triad (CIA Triad) model is used to ensure the security of data and systems. / يستخدم نموذج ثالوث أمن المعلومات في ضمان تأمين البيانات والأنظمة.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 20,
+    "question": "The Information Security Triad (CIA Triad) is a guiding framework that organizations should follow when protecting information. / يعد نموذج ثالوث أمن المعلومات دليلاً إرشادياً يتعين على المؤسسات الالتزام به عندما يتعلق الأمر بحماية المعلومات.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 21,
+    "question": "The primary goal of the Information Security Triad (CIA Triad) is to protect data from any unauthorized access. / الهدف الأساسي لـ \"نموذج ثالوث أمن المعلومات\" هو حماية البيانات من أي وصول غير مصرح به لها.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 22,
+    "question": "“Availability\" ensures that authorized users can access data when they need it within an appropriate time frame. / يضمن \"التوافر\" إمكانية وصول المستخدمين المصرح لهم إلى البيانات عند احتياجهم لها في فترة زمنية مناسبة.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 23,
+    "question": "\"Integrity\" refers to ensuring that no one can modify data without permission. / تشير \"السلامة\" إلى ضمان عدم قدرة أي شخص على تعديل البيانات دون إذن.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 24,
+    "question": "One example of confidentiality is encrypting documents on a computer system so that no one can read them except the authorized user(s). / أحد الأمثلة الدالة على \"السرية\" هو تشفير المستندات على نظام الكمبيوتر بحيث لا يمكن لأي شخص قراءتها غير المستخدم المصرح له.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 25,
+    "question": "\"Confidentiality\" refers to the system's ability to maintain data privacy and restrict access to unauthorized individuals. / تشير \"السرية\" إلى قدرة النظام على المحافظة على خصوصية البيانات وتقييد اطلاع الأشخاص غير المصرح لهم عليها.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 26,
+    "question": "Online Piracy is a legal activity if done online. / القرصنة الإلكترونية نشاط قانوني إذا تم القيام بها عبر الإنترنت.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 27,
+    "question": "In phishing attacks, victims provide their login information on fake websites. / في هجمات التصيد الاحتيالي، يقدم الضحايا معلومات تسجيل الدخول الخاصة بهم على مواقع ويب مزيفة.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 28,
+    "question": "A large number of downloads always guarantees that an app is safe. / عدد التنزيلات الكبير يضمن دائماً أن التطبيق آمن.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 29,
+    "question": "ATM Fraud always requires knowing the victim's PIN. / عمليات الاحتيال على أجهزة الصراف الآلي تتطلب دائماً معرفة الرقم السري للضحية.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 30,
+    "question": "Public Wi-Fi networks are always secure. / شبكات الواي فاي العامة آمنة دائماً.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 31,
+    "question": "Avoid visiting websites that don't have ....... , in the URL. / تجنب زيارة المواقع الإلكترونية التي لا تحتوي على ... في عنوان URL.",
+    "answer": "HTTPS",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 32,
+    "question": "Installing reliable antivirus software helps prevent ...... and viruses. / يساعد تثبيت برامج مكافحة الفيروسات الموثوقة على منع ...... والفيروسات.",
+    "answer": "Malware / البرامج الضارة",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 33,
+    "question": "Multi-Factor Authentication (MFA) means ... / المصادقة متعددة العوامل (MFA) تعني ...",
+    "answer": "Using more than one method to verify identity. / استخدام أكثر من طريقة للتحقق من الهوية.",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 34,
+    "question": "One way to protect your data is … / إحدى طرق حماية بياناتك هي ...",
+    "answer": "Creating long unique passwords and using a password manager. / إنشاء كلمات مرور طويلة وفريدة واستخدام مدير كلمات المرور.",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 35,
+    "question": "A Denial-of-Service (DOS) attack aims to: ..... / هجوم حجب الخدمة (DOS) يهدف إلى ..... :",
+    "answer": "Overwhelm systems or networks with traffic to make them unavailable. / إغراق الأنظمة أو الشبكات بحركة مرور كثيفة لجعلها غير متاحة.",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 36,
+    "question": "The user interface that relies on writing commands to computers is referred to as GUI. / تُعرف واجهة المستخدم التي تعتمد على كتابة الأوامر لأجهزة الكمبيوتر باسم واجهة المستخدم الرسومية GUI.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 37,
+    "question": "The user interface that relies on writing commands to computers is referred to as CLI. / واجهة المستخدم التي تعتمد على كتابة الأوامر إلى أجهزة الكمبيوتر تسمى CLI.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 38,
+    "question": "User interface to give command for computer is GUI. / واجهة المستخدم لإعطاء الأوامر للكمبيوتر هي GUI.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 39,
+    "question": "Windows 11 include ability to run Android applications and games directly / يتضمن ويندوز 11 القدرة على تشغيل تطبيقات وألعاب الأندرويد مباشرة.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 40,
+    "question": "The founder of Microsoft Corporation? / من هو مؤسس شركة ميكروسوفت؟",
+    "answer": "Bill Gates",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 41,
+    "question": "The hard disk is the main secondary storage device in a computer system. / القرص الصلب هو جهاز التخزين الثانوي الرئيسي في نظام الكمبيوتر.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 42,
+    "question": "A computer can operate without an operating system but cannot operate without application software. / يمكن للكمبيوتر أن يعمل بدون نظام تشغيل ولكن لا يمكنه العمل بدون برامج تطبيقية.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 43,
+    "question": "One Drive offers 1TB of free storage space per user. / يوفر ون درايف مساحة تخزين مجانية تبلغ 1 تيرابايت لكل مستخدم.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 44,
+    "question": "To count the duration of performing a task, use. / لحساب مدة تنفيذ المهمة، استخدم.",
+    "answer": "Timer",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 45,
+    "question": "An electronic memory that contains information that is useful in the initial operation of the device. / ذاكرة إلكترونية تحتوي على معلومات مفيدة في التشغيل الأولي للجهاز.",
+    "answer": "ROM",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 46,
+    "question": "Permanent Memory Computer devices are an electronic chip that has the ability to store information temporarily. / الذاكرة الدائمة في أجهزة الحاسب الآلي عبارة عن شريحة إلكترونية لديها القدرة على تخزين المعلومات بشكل مؤقت.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 47,
+    "question": "The ......... system is an example of a multitasking program. / نظام .......... هو مثال لبرنامج متعدد المهام.",
+    "answer": "Mac OS",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 48,
+    "question": "The larger the size of the RAM, the faster the computer. / كلما زاد حجم ذاكرة الوصول العشوائي (RAM)، كلما كان الكمبيوتر أسرع.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 49,
+    "question": "Computer software is divided into … / تنقسم برامج الكمبيوتر إلى ...",
+    "answer": "Two types",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 50,
+    "question": "Windows system enjoys a high degree of freedom to modify, operate distribute and develop its parts. / يتمتع نظام ويندوز بدرجة عالية من الحرية في التعديل والتشغيل والتوزيع والتطوير على أجزائه.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 51,
+    "question": "All these software applications are provided by Microsoft except … / يتم توفير كافة هذه التطبيقات البرمجية بواسطة مايكروسوفت باستثناء ...",
+    "answer": "Google Drive",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 52,
+    "question": "Analog computers are a combination of an analog and digital computers. / أجهزة الكمبيوتر التناظرية عبارة عن مزيج من أجهزة الكمبيوتر التناظرية والرقمية.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 53,
+    "question": "The memory unit is considered the brain of a computer. / تعتبر وحدة الذاكرة عقل الكمبيوتر.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 54,
+    "question": "The arithmetic and logic unit are in the central processing unit. / توجد وحدة الحساب والمنطق في وحدة المعالجة المركزية.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 55,
+    "question": "The application used for planning events .. / التطبيق المستخدم للتخطيط للأحداث ..",
+    "answer": "Calendar",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 56,
+    "question": "Types of hard disks store data on flash memory similar to working principle of flash memory. / الأقراص الصلبة من نوع ... تقوم بتخزين البيانات على ذاكرة وميضية على غرار مبدأ عمل ذاكرة الفلاش.",
+    "answer": "SSD",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 57,
+    "question": "A metal box that contains almost all of the basic computer components … / صندوق معدني يحتوي على جميع مكونات الكمبيوتر الأساسية تقريباً ...",
+    "answer": "The system unit",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 58,
+    "question": "...........is a volatile memory / ذاكرة متغيرة ......",
+    "answer": "RAM",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 59,
+    "question": "The process by which you can achieve a specific idea or solve a problem by dividing the idea or problem into successive steps … / العملية التي يمكنك من خلالها تحقيق فكرة معينة أو حل مشكلة ما، وذلك من خلال تقسيم الفكرة أو المشكلة إلى خطوات متتالية ...",
+    "answer": "Programming",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 60,
+    "question": "Microsoft released its first version of the Windows operating system in … / قدمت شركة ميكروسوفت أول إصداراتها من نظام التشغيل ويندوز في ...",
+    "answer": "1985",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 61,
+    "question": "A password can be created using a picture / يمكن إنشاء كلمة مرور بواسطة صورة",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 62,
+    "question": "Windows is an open-source Linux-based operating system developed by Google and the Open Mobile Alliance (OHA). / الويندوز هو نظام تشغيل مفتوح المصدر يستند إلى نظام تشغيل لينكس تم تطويره بواسطة شركة جوجل والتحالف المفتوح للهواتف النقالة.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 63,
+    "question": "To control document margins, select … / للتحكم في هوامش المستند، اختر ...",
+    "answer": "page setup",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 64,
+    "question": "To move a word, it must be cut. / لتحريك كلمة لابد من قصها.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 65,
+    "question": "To choose wide margins within the document from the … (group) / لاختيار هوامش واسعة داخل المستند من ... (مجموعة)",
+    "answer": "page setup",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 66,
+    "question": "To choose wide margins within the document from the … (tab) / لاختيار هوامش واسعة داخل المستند من ... (تبويب)",
+    "answer": "Layout",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 67,
+    "question": "Ribbon has been included in Office applications since Office 2007. / تم تضمين الشريط في تطبيقات Office منذ عام 2007.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 68,
+    "question": "Press ... key to print the document. / اضغط على مفتاح ... لطباعة المستند.",
+    "answer": "Ctrl + P",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 69,
+    "question": "The shortcut to close the Word file is … / اختصار إغلاق ملف الوورد هو ...",
+    "answer": "Ctrl + W",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 70,
+    "question": "To write a comment on word press key … / لكتابة تعليق على كلمة اضغط مفتاح ...",
+    "answer": "Ctrl + Alt + M",
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 71,
+    "question": "The default view in the word is the ...... / العرض الافتراضي في برنامج معالج النصوص هو ......",
+    "answer": "Print layout",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 72,
+    "question": "Cross references are updated automatically. / يتم تحديث المراجع التبادلية تلقائياً.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 73,
+    "question": ".... are text below illustrations. / ... نص أسفل الرسومات التوضيحية.",
+    "answer": "Captions",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 74,
+    "question": "The method of numbering the footnote cannot be changed to be alphabetically instead of traditional numbers. / لا يمكن تغيير طريقة ترقيم الحاشية السفلية لتكون أبجدياً بدلاً من الأرقام التقليدية.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 75,
+    "question": "When you click Save selection as a new Quick Style, the style should not be named so that the style you created appears in the style gallery. / عند النقر فوق حفظ التحديد كنمط سريع جديد، لا ينبغي تسمية النمط حتى يظهر النمط الذي قمت بإنشائه في معرض الأنماط.",
+    "answer": "خطأ",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 76,
+    "question": "Status bar contains the number of words in a word processor document. / يحتوي شريط الحالة على عدد الكلمات الموجودة في مستند معالج الكلمات.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 77,
+    "question": "The document is printed or previewed before printing from the View tab. / تتم طباعة المستند أو معاينته قبل الطباعة من علامة التبويب عرض.",
+    "answer": "خطأ (تتم من ملف ثم طباعة)",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 78,
+    "question": "A style is a set of characteristics, such as font name size and color paragraph alignment and spacing, borders and shading. / النمط هو مجموعة من الخصائص، مثل اسم الخط وحجمه ولونه ومحاذاة الفقرات والتباعد والحدود والتظليل.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 79,
+    "question": "The Footnote and Endnote dialog box contains options to control how footnotes and endnotes appear from master tab. / يحتوي مربع الحوار Footnote and Endnote على خيارات للتحكم في كيفية ظهور الحواشي السفلية والتعليقات الختامية من علامة التبويب الرئيسية.",
+    "answer": "خطأ (من علامة تبويب مراجع References)",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 80,
+    "question": "In print page preview mode, you can see ... / في وضع معاينة صفحة الطباعة، يمكنك رؤية ...",
+    "answer": "all the pages of your document / كل صفحات المستند",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 81,
+    "question": "You can translate a word by clicking on it. / تستطيع ترجمة كلمة بالضغط عليها.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 82,
+    "question": "Information in the Citations or Manage Sources tool cannot be used to create footnotes or endnotes. / لا يمكن استخدام المعلومات في أداة الاقتباسات أو إدارة المصادر لإنشاء الحواشي السفلية أو التعليقات الختامية.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 83,
+    "question": "The document saves with extinction HMT for display on the Web. / يتم حفظ المستند بامتداد HMT لعرضه على الويب.",
+    "answer": "خطأ (الامتداد الصحيح هو html)",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 84,
+    "question": "To add an additional shape in a SmartArt graphic ... / لإضافة شكل إضافي في رسم SmartArt ....",
+    "answer": "Right-click on the shape and choose 'Add Shape'",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 85,
+    "question": "The position of images in the document is determined by the group .... / يتم تحديد موضع الصور في المستند من خلال المجموعة ...",
+    "answer": "Arrange",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 86,
+    "question": "To view the origin of the merged fields, we choose ... / لكي يتم مشاهدة أصل الحقول التي تم دمجها نختار...",
+    "answer": "Highlight fields",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 87,
+    "question": "When you create a new blank presentation, begins with a slide whose layout is the title slide. / عند إنشاء عرض تقديمي جديد فارغ، يبدأ بشريحة يكون تخطيطها شريحة العنوان.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 88,
+    "question": "One element can carry more than one movement. / يمكن أن يكون للعنصر الواحد أكثر من حركة.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 89,
+    "question": "The main bar includes commands for references. / يتضمن الشريط الرئيسي أوامر للمراجع.",
+    "answer": "خطأ (لا يتضمن)",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 90,
+    "question": "Why use outline view? / لماذا تستخدم عرض المخطط التفصيلي؟",
+    "answer": "To edit bulleted addresses",
+    "type": "مقالي قصير"
+  },
+  {
+    "id": 91,
+    "question": "How can you save layouts, colors, fonts, effects, background styles, and content for others to use with their presentations. / كيف يمكنك حفظ التخطيطات والألوان والخطوط والتأثيرات وأنماط الخلفية والمحتوى ليستخدمها الآخرون في عروضهم التقديمية.",
+    "answer": "Export the file as a template",
+    "type": "مقالي قصير"
+  },
+  {
+    "id": 92,
+    "question": "You can add a chart or graph to a slide using the View tab. / يمكنك إضافة مخطط أو رسم بياني إلى شريحة باستخدام علامة التبويب عرض.",
+    "answer": "خطأ (يتم من علامة تبويب إدراج Insert)",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 93,
+    "question": "The order of items within a slide can be changed by changing the order of the slides. / يمكن تغيير ترتيب العناصر داخل الشريحة عن طريق تغيير ترتيب الشرائح.",
+    "answer": "خطأ (تغيير ترتيب العناصر يتم من خلال تبويب Animation pane أو إعادة ترتيب العناصر نفسها)",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 94,
+    "question": "To record the screen, we click ... / لتسجيل الشاشة نضغط على ...",
+    "answer": "Insert-Screen Recording",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 95,
+    "question": "There are …. ways to insert a new slide. / يوجد ... طرق لإضافة شريحة جديدة.",
+    "answer": "4 - 5",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 96,
+    "question": "When you save a presentation to a .potx, what kind of Powerpoint file is generated? / عند حفظ عرض تقديمي بامتداد potx. ما نوع ملف Power Point الناتج؟",
+    "answer": "Template",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 97,
+    "question": "What happens when I press the Esc key while playing a slideshow from the current slide or from the beginning. / ماذا يحدث عندما أضغط على مفتاح Esc أثناء تشغيل عرض الشرائح من الشريحة الحالية أو من البداية.",
+    "answer": "Slideshow ends",
+    "type": "مقالي قصير"
+  },
+  {
+    "id": 98,
+    "question": "Animations have 5 types in PowerPoint. / يوجد خمس مجموعات من الحركات في برنامج البور بوينت.",
+    "answer": "خطأ (يوجد 4 مجموعات)",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 99,
+    "question": "A green triangle will appear beside a cell if the cell is a ‘text format’ while it contains numbers. / سيظهر مثلث أخضر بجانب الخلية إذا كانت الخلية بتنسيق نص بينما تحتوي على أرقام.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 100,
+    "question": "Excel allows merging more than one worksheet, and thus calculations can be performed across these sheets. / يتيح إكسل دمج أكثر من ورقة عمل واحدة، وبالتالي يمكن إجراء العمليات الحسابية عبر هذه الأوراق.",
+    "answer": "صح",
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 101,
+    "question": "You can control the content of a cell through … / يمكنك التحكم في محتوى الخلية من خلال ...",
+    "answer": "Data validation (Data Tab -> Data Tools Group)",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 102,
+    "question": "Proper function belongs to ... function. / تنتمي الدالة Proper إلى مجموعة الدوال ...",
+    "answer": "Text (نصية)",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 103,
+    "question": "Round function belongs to ... function. / تنتمي الدالة Round إلى مجموعة الدوال ...",
+    "answer": "Mathematical (رياضية)",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 104,
+    "question": "To select range of cells in the worksheet, choose … / لتحديد نطاق من الخاليا في ورقة العمل، اختر ...",
+    "answer": "CTRL+SHIFT+END",
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 105,
+    "question": "To distinguish between a relative cell reference and absolute cell reference we use … / للتمييز بين مرجع الخلية النسبي ومرجع الخلية المطلق نستخدم ...",
+    "answer": "$",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 106,
+    "question": "There are 2 types of references, relative reference and percentage reference. / هناك نوعان من المراجع، مرجع نسبي ومرجع مئوي.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 107,
+    "question": "Two worksheets can be linked together and the results displayed on a third worksheet. / يمكن ربط ورقتي عمل ببعضهما واظهار النتائج في ورقة عمل ثالثة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 108,
+    "question": "To transfer an image from one worksheet to another by moving. / لنقل صورة من ورقة عمل إلى أخرى عن طريق النقل.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 109,
+    "question": "A new row can be inserted into the worksheet by right-click on the row name. / يمكن إدراج صف جديد في ورقة العمل عن طريق النقر بزر الماوس الأيمن فوق اسم الصف.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 110,
+    "question": "To insert a row or column, select the row or column. / لإدراج صف أو عمود، حدد الصف أو العمود.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 111,
+    "question": "You can move between the different comments in a worksheet by pressing ... / يمكنك التنقل بين التعليقات المختلفة في ورقة العمل بالضغط على ...",
+    "answer": "Review",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 112,
+    "question": "When using SUBTOTAL function, we will notice on the right side there are … levels. / عند استخدام دالة SUBTOTAL ، سنلاحظ في الجانب الأيمن وجود .... مستويات.",
+    "answer": "Three",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 113,
+    "question": "The chart can be moved to a new worksheet or another file using the Chart Move options on the ... tab. / يمكن نقل المخطط إلى ورقة عمل جديدة أو ملف آخر باستخدام خيارات نقل المخطط من خلال علامة التبويب ...",
+    "answer": "Design",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 114,
+    "question": "In Excel what can't be secured against password protecting a sheet? / في اكسيل ما الذي لا يمكن تأمينه ضد حماية الورقة بكلمة مرور؟",
+    "answer": "Unauthorized users can open the sheet",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 115,
+    "question": "Open windows can be switched through the Page Layout tab. / يمكن تبديل النوافذ المفتوحة من خلال تبويب تخطيط الصفحة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 116,
+    "question": "The RANDBETWEEN function, a new random integer is returned each time the worksheet is recalculated. / دالة RANDBETWEEN تقوم بإرجاع عدد صحيح عشوائي جديد في كل مرة يتم فيها إعادة حساب ورقة العمل.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 117,
+    "question": "The LOWER function converts all uppercase letters to lowercase. / تقوم الدالة LOWER بتحويل كافة الأحرف الكبيرة إلى أحرف صغيرة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 118,
+    "question": "Cell locking or hiding formulas will not be activated until the workbook or the worksheet is protected. / لن يتم تنشيط قفل الخلية أو إخفاء الصيغ حتى تتم حماية المصنف أو ورقة العمل.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 119,
+    "question": "Conditional format can be applied through the Insert tab. / يمكن تطبيق التنسيق الشرطي من خلال علامة التبويب \"إدراج\".",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 120,
+    "question": "The function ........ searches for a value written in a cell, then recalls its data in a specific column. / تقوم الدالة ..... بالبحث عن قيمة مكتوبة في خلية، ثم تقوم بذكر بياناتها في عمود معين.",
+    "answer": "VLOOKUP",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 121,
+    "question": "The function ........ searches for a value written in a cell, then recalls its order in a specific column. / تقوم الدالة ..... بالبحث عن قيمة مكتوبة في خلية، ثم تقوم بذكر ترتيبها في عمود معين.",
+    "answer": "MATCH",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 122,
+    "question": "Zooming the workbook in and out is done from the Review tab. / يتم تكبير وتصغير المصنف من علامة التبويب مراجعة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 123,
+    "question": "The range L11:N15 contains 15 cells. / النطاق L11:N15 يحتوي على 15 خلية.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 124,
+    "question": "Function that turns the first letter to uppercase … / دالة تقوم بتحويل الحرف الأول إلى حرف كبير ....",
+    "answer": "Proper",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 125,
+    "question": "We show or hide gridlines from the ... tab. / نقوم بإظهار أو إخفاء خطوط الشبكة من علامة التبويب ...",
+    "answer": "Page layout",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 126,
+    "question": "The ... function is used to count the number of cells containing a numeric or text value. / تستخدم الدالة ... لحساب عدد الخلايا المحتوية على قيمة رقمية او نصية.",
+    "answer": "CountA",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 127,
+    "question": "The chart should have a title that explains the overall content of the chart, and usually, this title is located at the bottom of the chart. / يجب أن يكون للمخطط عنوان يوضح المحتوى الإجمالي للمخطط، وعادةً ما يكون هذا العنوان موجوداً في أسفل المخطط.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 128,
+    "question": "We can exclude the third part of the SUMIF equation if the conditional range is the same as the sum range. / يمكننا استبعاد الجزء الثالث من معادلة SUMIF إذا كان النطاق الشرطي هو نفس نطاق المجموع.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 129,
+    "question": "You can set some rows to be repeated at the top while printing via … / يمكنك ضبط بعض الصفوف ليتم تكرارها في الأعلى أثناء الطباعة بواسطة ...",
+    "answer": "Print titles",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 130,
+    "question": "The error.... appears when the equation needs to be corrected. / الخطأ ... يظهر عندما تحتاج المعادلة إلى تصحيح.",
+    "answer": "#Name?",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 131,
+    "question": "When auto-filling numbers, we only enter one value. / عند التعبئة التلقائية للأرقام، ندخل قيمة واحدة فقط.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 132,
+    "question": "You can change the values or the cells content from horizontal to vertical using ..... tab. / يمكنك تغيير القيم أو محتوى الخلية من الوضع الأفقي إلى الوضع الرأسي باستخدام علامة التبويب ....",
+    "answer": "Home",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 133,
+    "question": "Filtering is used to arrange values in ascending or descending order. / يتم استخدام التصفية لترتيب القيم بترتيب تصاعدي أو تنازلي.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 134,
+    "question": "Excel allows performing calculations on more than three worksheets. / يسمح برنامج Excel بإجراء العمليات الحسابية على أكثر من ثلاث أوراق عمل.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 135,
+    "question": "The conditional formatting is located in the group … / التنسيق الشرطي موجود في مجموعة ...",
+    "answer": "Styles",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 136,
+    "question": "A way to find and a subset of data to temporarily exclude rows that we don’t want to display on the screen and show rows that match a condition. / طريقة للعثور على مجموعة فرعية من البيانات واستبعاد الصفوف التي لا نرغب في عرضها على الشاشة مؤقتاً وإظهار الصفوف التي تطابق شرطاً ما.",
+    "answer": "Filtering",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 137,
+    "question": "Is keeping an area of the worksheet visible while you scroll to other columns and rows. / هو إبقاء منطقة من ورقة العمل مرئية أثناء التمرير إلى الأعمدة والصفوف الأخرى.",
+    "answer": "Freezing",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 138,
+    "question": "The error #Num appears when there is an invalid numerical value. / يظهر الخطأ #Num عندما تكون هناك قيمة رقمية غير صالحة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 139,
+    "question": "You cannot control a cell value using data validation option. / لا يمكنك التحكم في قيمة الخلية باستخدام خيار التحقق من صحة البيانات.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 140,
+    "question": "The error #NUM! appears when the formula or function contains … / الخطأ !#NUM يظهر عندما تحتوي الصيغة أو الدالة على ...",
+    "answer": "invalid numerical values",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 141,
+    "question": "Function that returns the serial number for the current date. / دالة تقوم بإرجاع الرقم التسلسلي للتاريخ الحالي.",
+    "answer": "Today",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 142,
+    "question": "Applying a specific format automatically, such as color, to one or more cells based on the cell's value according to a specified condition to distinguish it from the rest of the data. / تطبيق تنسيق معين تلقائياً، مثل اللون، على خلية واحدة أو أكثر بناءً على قيمة الخلية وفقاً لشرط محدد لتمييزها عن بقية البيانات.",
+    "answer": "Conditional formatting",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 143,
+    "question": "Operations enclosed in brackets are the last calculations performed by Excel within the equation. / العمليات المحاطة بين قوسين هي آخر العمليات الحسابية التي يقوم بها برنامج اكسل ضمن المعادلة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 144,
+    "question": "Through the Account command, the default size of the text field can be set to 200. / من خلال أمر حساب، يمكن ضبط الحجم الافتراضي لحقل النص إلى 200.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 145,
+    "question": "The common field between the two tables must be of the same type. / يجب أن يكون الحقل المشترك بين الجدولين من نفس النوع.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 146,
+    "question": "From create tab you can create a new table. / من علامة التبويب \"إنشاء\"، يمكنك إنشاء جدول جديد.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 147,
+    "question": "The “Selection query” type is used to retrieve data directly as it is. / يتم استخدام نوع استعلام التحديد لاسترجاع البيانات مباشرة كما هي.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 148,
+    "question": "… responsible for controlling all the permissions and uses of the database. / ... المسؤول عن التحكم في جميع الأذونات واستخدامات قاعدة البيانات.",
+    "answer": "DBA (Data Base Administrator)",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 149,
+    "question": "The database can be compressed and repaired from DATABASE TOOLS tab. / يمكن ضغط قاعدة البيانات وإصالحها من عالمة التبويب \"أدوات قاعدة البيانات\".",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 150,
+    "question": "Database data can be exported to a text file from ... tab. / يمكن تصدير بيانات قاعدة البيانات إلى ملف نصي من عالمة التبويب ...",
+    "answer": "External data",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 151,
+    "question": "Linking tables to each other is done through the foreign field in one table and the alternative field in another table, provided that they have the same value. / ربط الجداول ببعضها البعض يتم من خالل الحقل الأجنبي في أحد الجداول والحقل البديل في الجدول الآخر، بشرط أن يكونا لها نفس القيمة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 152,
+    "question": "… is used to retrieve data from one or more tables. / ... يتم استخدامه لاسترجاع البيانات من جدول واحد أو أكثر.",
+    "answer": "Select Query",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 153,
+    "question": "The student's relationship with academic subjects is a relationship of … / علاقة الطالب بالمواد الدراسية هي عالقة ...",
+    "answer": "many to many",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 154,
+    "question": "The Access program contains a default database called Blank Database. / يحتوي برنامج Access على قاعدة بيانات افتراضية تسمى \"قاعدة بيانات فارغة\".",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 155,
+    "question": "… is the requirement that data in the primary key field of the primary table must be present in the foreign key field of the secondary table. / ... يقتضي أن تكون البيانات الموجودة في حقل المفتاح الأساسي للجدول الأساسي موجودة في حقل المفتاح الأجنبي في الجدول الثانوي.",
+    "answer": "Referential Integrity",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 156,
+    "question": "The navigation pane is important for facilitating report printing and obtaining a copy of the database data. / تعتبر لوحة التنقل مهمة لتسهيل طباعة التقرير والحصول على نسخة من بيانات قاعدة البيانات.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 157,
+    "question": "It is required that the length of the field name does not exceed 64 characters. / يشترط ألا يتجاوز طول اسم الحقل 64 حرفاً.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 158,
+    "question": "The main window of the database consists of ... sections. / تتكون النافذة الرئيسية لقاعدة البيانات من ... أقسام.",
+    "answer": "3",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 159,
+    "question": "A single table cannot exist without being connected to another table, otherwise we would not be able to describe this as a database. / لا يمكن أن يوجد جدول واحد دون أن يكون متصلاً بجدول آخر، وإلا فلن نكون قادرين على وصف هذا بأنه قاعدة بيانات.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 160,
+    "question": "Reports are objects for displaying and printing data. / التقارير هي كائنات لعرض البيانات وطباعتها.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 161,
+    "question": "It is preferable that the key column fields be ... / يفضل ان تكون حقول العمود المفتاحية ....",
+    "answer": "numeric",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 162,
+    "question": "The field that distinguishes records from other records and consists of only one field. / الحقل الذي يميز السجالت عن السجالت الأخرى ويتكون من حقل واحد فقط.",
+    "answer": "Primary key",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 163,
+    "question": "IOS operating system developed by .. / نظام التشغيل آي أو إس الذي طورته ..",
+    "answer": "Apple",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 164,
+    "question": "In Google Translate app, the instant translation mode can be activated by clicking on ... sign and then talk in the microphone. / في تطبيق ترجمة جوجل يمكن تفعيل وضع الترجمة الفورية بالضغط على ... ثم التحدث في الميكروفون.",
+    "answer": "Conversation",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 165,
+    "question": "Canva App belongs to the ... Apps. / ينتمي تطبيق Canva إلى تطبيقات ...",
+    "answer": "Photo & Video Editing",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 166,
+    "question": "Harmony operating system developed by .. / نظام التشغيل هارموني الذي طورته ..",
+    "answer": "Huawei",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 167,
+    "question": "The interface of the Google Docs app is similar to that of other word processing apps such as Apple Pages. / تتشابه واجهة تطبيق Google Docs مع واجهة تطبيقات معالجة الكلمات الأخرى مثل Apple Pages.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 168,
+    "question": "Within Telegram, users can send messages to other users individually or to groups of up to 200,000 members. / داخل Telegram، يمكن للمستخدمين إرسال رسائل إلى مستخدمين آخرين بشكل فردي أو إلى مجموعات يصل عددها إلى 200 ألف عضو.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 169,
+    "question": "Huawei is currently launching smartphones made Egypt market. / تطلق شركة هواوي حالياً هواتف ذكية مصنعة بالسوق المصري. (سامسونج وانفينكس وفيفو)",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 170,
+    "question": "... are programmed applications for a particular operating system. / ... هي تطبيقات مبرمجة لنظام تشغيل معين",
+    "answer": "Native Apps",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 171,
+    "question": "After verifying the access code, the user is allowed to link credit cards to the electronic wallet in order to use their balances. / بعد التحقق من رمز الدخول، يسمح للمستخدم بربط بطاقات الائتمان بالمحفظة الإلكترونية لاستخدام أرصدته.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 172,
+    "question": "Mobile Data is used to communicate between two devices over a local network. (Wi-Fi) / يتم استخدام بيانات المحمول للتواصل بين جهازين عبر شبكة محلية.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 173,
+    "question": "Through the Google Lens app, you can photograph a piece of goods to know its price and places of display. / من خلال تطبيق Google Lens يمكنك تصوير قطعة من السلع لمعرفة سعرها وأماكن عرضها.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 174,
+    "question": "Automatically launching many apps at the operating system startup does not affect the storage space. / إن تشغيل العديد من التطبيقات تلقائياً عند بدء تشغيل نظام التشغيل لا يؤثر على مساحة التخزين. (تؤثر على ذاكرة النظام)",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 175,
+    "question": "To lock an Android mobile or erase its data, make sure that battery charge should not be less than ... / لقفل هاتف أندرويد أو مسح بياناته، تأكد من أن شحن البطارية لا ينبغي أن يكون أقل من ...",
+    "answer": "50%",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 176,
+    "question": "Within the Tiktok application, users can shoot a video clip next to another video, and this feature is called Deep Duo. (Duet) / داخل تطبيق تيك توك، يستطيع المستخدمون تصوير مقطع فيديو بجوار مقطع فيديو آخر، وتسمى هذه الميزة Deep Duo.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 177,
+    "question": "... is a note-taking app developed by Google. / هو تطبيق لتدوين الملاحظات تم تطويره بواسطة Google",
+    "answer": "Keep",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 178,
+    "question": "Google Meet app allows the creation of free meetings with up to ... participants. / يتيح تطبيق Google Meet إنشاء اجتماعات مجانية تضم ما يصل إلى ... مشاركين.",
+    "answer": "100",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 179,
+    "question": "The phone and Wi-Fi router are connected via Bluetooth. / يتم توصيل الهاتف وجهاز توجيه Wi-Fi عبر البلوتوث.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 180,
+    "question": "The Google apps are currently known as G Suite. / تُعرف تطبيقات Google حالياً باسم G Suite",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 181,
+    "question": "Dustin Moskovitz is one of the three founders Of Facebook, along with Chris Hughes and Mark Zuckerberg. / داستن موسكوفيتز هو أحد مؤسسي موقع فيسبوك الثلاثة، إلى جانب كريس هيوز ومارك زوكربرج",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 182,
+    "question": "In the past, the YouTube application used Adobe Flash technology to display animated clips. / في الماضي، كان تطبيق YouTube يستخدم تقنية Adobe Flash لعرض المقاطع المتحركة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 183,
+    "question": "A social networking application for recording, broadcasting and sharing video messages for a specific period of time. / تطبيق شبكات اجتماعية لتسجيل وبث ومشاركة رسائل الفيديو لفترة زمنية محددة.",
+    "answer": "Snap Chat",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 184,
+    "question": "Progressive web applications have the advantage of providing a shortcut to the web site within the mobile. / تتمتع تطبيقات الويب التقدمية بميزة توفير اختصار لموقع الويب داخل الهاتف المحمول.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 185,
+    "question": "In Google Maps app, you can change the day or hour of travel to find the best route before departure. / في تطبيق خرائط جوجل، يمكنك تغيير يوم أو ساعة السفر للعثور على أفضل طريق قبل المغادرة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 186,
+    "question": "Logging in with your academic college email unlocks the premium paid features within Microsoft 365 apps. / يؤدي تسجيل الدخول باستخدام بريدك الإلكتروني الخاص بالكلية الأكاديمية إلى فتح الميزات المدفوعة المتميزة ضمن تطبيقات Microsoft 365",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 187,
+    "question": "The Startup Manager controls the permission apps settings. (الشغيل التلقائي) / يتحكم مدير بدء التشغيل في إعدادات أذون التطبيقات.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 188,
+    "question": "Find my phone! is automatically activated if .... account is added to your mobile. / جد هاتفي! يتم تنشيطه تلقائياً إذا تمت إضافة .... الحساب إلى هاتفك النقال.",
+    "answer": "Google",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 189,
+    "question": "It controls the number of apps that can run concurrently. / يتحكم في عدد التطبيقات التي يمكن تشغيلها بشكل متزامن.",
+    "answer": "RAM",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 190,
+    "question": "It is recommended that the screen turn off automatically after 30 minutes of non-use to conserve battery. (مباشرة أو بعد عدة ثوان) / يوصى بإيقاف تشغيل الشاشة تلقائياً بعد 30 دقيقة من عدم الاستخدام للحفاظ على البطارية.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 191,
+    "question": "You can delete some of the system applications already installed on your Android phone. (إيقاف) / يمكنك حذف بعض تطبيقات النظام المثبتة بالفعل على هاتف الاندرويد الخاص بك.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 192,
+    "question": "MicroSD external memory is a way to protect the phone screen from scratches or breakage. / الذاكرة الخارجية MicroSD هي وسيلة لحماية شاشة الهاتف من الخدوش أو الكسر.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 193,
+    "question": "The 'Lightroom' app belongs to virtual meeting apps. (تحرير الصور والفيديو) / ينتمي تطبيق 'Lightroom' إلى تطبيقات الاجتماعات الافتراضية.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 194,
+    "question": "UBER app is considered .... / يعتبر تطبيق أوبر ....",
+    "answer": "Hybrid App",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 195,
+    "question": "Google provides security tool for scanning applications to avoid harmful behaviors called ... / توفر جوجل أداة أمنية لفحص التطبيقات لتجنب السلوكيات الضارة تسمى .........",
+    "answer": "google protect",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 196,
+    "question": "The card verification value written on the back of the bank card must not be seen by anyone except the card owner. / يجب ألا يطلع أحد على قيمة التحقق المكتوبة على ظهر البطاقة المصرفية إلا صاحب البطاقة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 197,
+    "question": "Two-Factor Authentication mode is a method with two keys to log in your account. / يعد وضع المصادقة الثنائية طريقة تحتوي على مفتاحين لتسجيل الدخول إلى حسابك.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 198,
+    "question": "A platform ... helped to publish over 500,000 apps so far. / منصة ... ساعدت في نشر أكثر من 500 ألف تطبيق حتى الآن.",
+    "answer": "Apps-builder",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 199,
+    "question": "The Facebook community expanded to include any college student, then high school students, and finally anyone of age .... / توسع مجتمع الفيسبوك ليشمل أي طالب جامعي، ثم طلاب المدارس الثانوية، وأخيراً أي شخص في السن ....",
+    "answer": "13 years old",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 200,
+    "question": "BlueMail is a secure email application that is available for free in the Google Play Store and not for free on the iPhone and iPad stores. / BlueMail هو تطبيق بريد إلكتروني آمن ومتوفر مجاناً في متجر Google Play وليس مجاناً على متاجر iPhone و iPad.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 201,
+    "question": "'Filmora' app belongs to the apps of editing photos and videos. / ينتمي تطبيق 'Filmora' إلى تطبيقات تعديل الصور والفيديوهات.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 202,
+    "question": "Through ..... platform, you can control all the details of the application without using one code. / من خلال منصة ..... يمكنك التحكم بكافة تفاصيل التطبيق دون استخدام كود واحد.",
+    "answer": "Good Barber",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 203,
+    "question": "QR Code is a developed version or ... From the Barcode. / QR Code هو نسخة مطورة أو اصدار ... من الباركود.",
+    "answer": "Second",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 204,
+    "question": "The Find My Phone feature allows you to update locations apps. (العثور على الهاتف المفقود) / تتيح لك ميزة Find My Phone تحديث تطبيقات المواقع.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 205,
+    "question": "It is recommended to update Google Maps app to obtain the new features that the app may provide. / يوصى بتحديث تطبيق خرائط Google للحصول على الميزات الجديدة التي قد يوفرها التطبيق.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 206,
+    "question": "Secure shopping websites and e-stores start with the website domain HTTP. (HTTPS) / تبدأ مواقع التسوق والمتاجر الإلكترونية الآمنة بنطاق موقع الويب HTTP.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 207,
+    "question": "To create an event on mobile we use ... Google app / لإنشاء حدث على الهاتف المحمول نستخدم تطبيق ... جوجل",
+    "answer": "Calendar",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 208,
+    "question": "Google ... app is known as a powerful tool that helps in scheduling appointments effectively. / يُعرف تطبيق Google ...... بأنه أداة قوية تساعد في جدولة المواعيد بشكل فعال.",
+    "answer": "Calendar",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 209,
+    "question": "WhatsApp is a decentralized messaging service. / WhatsApp خدمة مراسلة لا مركزية.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 210,
+    "question": "Tablets are equipped with screens starting from 7 inches and up to 12 inches. / الأجهزة اللوحية مزودة بشاشات تبدأ من 7 بوصة وتصل إلى 12 بوصة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 211,
+    "question": "GPS relies on Internet data. / يعتمد نظام تحديد المواقع العالمي (GPS) على بيانات الإنترنت.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 212,
+    "question": "It connects the smartphone to the local network and connects it to the Internet. / يقوم بتوصيل الهاتف الذكي بالشبكة المحلية وتوصيله بالإنترنت.",
+    "answer": "Wi-fi",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 213,
+    "question": "Snapseed can be considered a social media app. (تحرير الصور والفيديو) / يمكن اعتبار Snapseed أحد تطبيقات الوسائط الاجتماعية.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 214,
+    "question": "Code…. Is a passcode that is valid for several minutes to secure banking transactions and online purchases. / شفرة ... هو رمز مرور صالح لعدة دقائق لتأمين المعاملات المصرفية والمشتريات عبر الإنترنت.",
+    "answer": "OTP (One Time Password)",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 215,
+    "question": "The platform that provides a powerful editor with great possibilities in the visual display. / المنصة التي توفر محرراً قوياً بإمكانيات كبيرة في العرض المرئي.",
+    "answer": "MobinCube platform",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 216,
+    "question": "Applications that using one global language such as JavaScript. / التطبيقات التي تستخدم لغة عالمية واحدة مثل جافا سكريبت.",
+    "answer": "Cross-Platform Apps",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 217,
+    "question": "Secure shopping websites and e-stores start with the website domain HTTP. (HTTPS) / تبدأ مواقع التسوق والمتاجر الإلكترونية الآمنة بنطاق موقع الويب HTTP.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 218,
+    "question": "The journal's impact factor is based on calculating the number of times articles are searched for during a given year in the journal. (citations or articles coming from it) / يعتمد معامل التأثير للمجلة على حساب عدد مرات البحث عن المقالات خلال سنة معينة في المجلة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 219,
+    "question": "Using the Google search engine, if you want to know who cited a Washington Post article on their site the correct structure of the search sentence. / باستخدام محرك بحث جوجل، إذا كنت تريد معرفة من الذي استشهد بمقالة واشنطن بوست على موقعه، فاستخدم البنية الصحيحة لجملة البحث.",
+    "answer": "Link: washingtonpost.com",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 220,
+    "question": "The words you type in a search field to get your results are called … / الكلمات التي تكتبها في حقل البحث للحصول على نتائجك تسمى ...",
+    "answer": "Search terms",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 221,
+    "question": "The Database … enables you to merge more than one account of the same author. / تمكنك قاعدة البيانات ..... من دمج أكثر من حساب لنفس المؤلف.",
+    "answer": "Scopus",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 222,
+    "question": "The Egyptian Knowledge Bank (EKB) offers a range of online workshops. / يقدم بنك المعرفة المصري (EKB) مجموعة من ورش العمل عبر الإنترنت.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 223,
+    "question": "Boolean operations cannot be used when searching within a ProQuest database. / لا يمكن استخدام العمليات المنطقية عند البحث داخل قاعدة بيانات ProQuest.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 224,
+    "question": "Scopus sources are accessed through the ELSEVIER database. / يتم الوصول إلى مصادر Scopus من خلال قاعدة بيانات ELSEVIER.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 225,
+    "question": "The user can access Clarivate from the Sources menu in the Egyptian Knowledge Bank. / يمكن للمستخدم الوصول إلى Clarivate من قائمة المصادر ببنك المعرفة المصري.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 226,
+    "question": "SCImago displays SCOPUS metrics for a journal according a year. / يعرض SCImago مقاييس SCOPUS للمجلة وفقاً للسنة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 227,
+    "question": "The search engine comprehensively scans the network to obtain results when you enter search words. (indexes) / يقوم محرك البحث بفحص الشبكة بشكل شامل للحصول على النتائج عند إدخال كلمات البحث.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 228,
+    "question": "The website … allows you to use EndNote Online for free. / يتيح لك موقع الويب ... استخدام EndNote Online مجاناً.",
+    "answer": "Clarivate",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 229,
+    "question": "Using Google, if you want to find a website similar to eBay, what is the correct syntax for your search term? / باستخدام جوجل، ان كنت تريد إيجاد موقع شبيه بموقع eBay، ما الصيغة الصحيحة للبحث؟",
+    "answer": "related: eBay.com",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 230,
+    "question": "Dar Al-Mandumah's index contains a group of subsections. / يحتوي فهرس دار المنظومة على مجموعة من الأقسام الفرعية.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 231,
+    "question": "The document can be saved for viewing on the web with the HMT extension. (html) / يمكن حفظ المستند للعرض على الويب باستخدام امتداد HMT.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 232,
+    "question": "Use advanced search to ..... your results. / استخدم البحث المتقدم ل ..... نتائجك.",
+    "answer": "Narrow",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 233,
+    "question": "The data source in SCImago is / مصدر البيانات في SCImago هو",
+    "answer": "Scopus",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 234,
+    "question": "Advanced search in WOS is used to narrow your search according to specific criteria. / يتم استخدام البحث المتقدم في WOS لتضييق نطاق البحث وفقاً لمعايير محددة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 235,
+    "question": "Use... to expand your search .. / استخدم ... لتوسيع نطاق البحث ..",
+    "answer": "OR",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 236,
+    "question": "SJR enables you to arrange journals in your field and filter them by topic, but it is difficult to classify them by year. / تمكنك SJR من ترتيب المجلات في مجالك وتصفيتها حسب الموضوع ولكن من الصعب تصنيفها حسب السنة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 237,
+    "question": "The Scopus database is a powerful tool if you want to compare journals in the same subject category. (IF) / تعد قاعدة بيانات Scopus أداة قوية إذا كنت تريد مقارنة المجلات في نفس فئة الموضوع.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 238,
+    "question": "refers to the technical 'gateway' used to access resources on a web server .... / يشير إلى 'البوابة' التقنية المستخدمة للوصول إلى الموارد الموجودة على خادم الويب ...",
+    "answer": "Port",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 239,
+    "question": "Using a hyphen (-) when searching on Google leads to reducing the search results. / يؤدي استخدام الشرطة (-) عند البحث في جوجل إلى تقليل نتائج البحث.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 240,
+    "question": "An indicator that is considered a measure of the scientific influence of scientific journals that explains the status of the journals from which citations come is …. / المؤشر الذي يعتبر مقياساً للتأثير العلمي للمجلات العلمية ويوضح حالة المجلات التي يأتي منها الاستشهادات هو ...",
+    "answer": "SCIMAGO Journal Rank",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 241,
+    "question": "You can use OneDrive as a cloud drive within tab … / يمكنك استخدام OneDrive كمحرك أقراص سحابي ضمن علامة التبويب ...",
+    "answer": "App launcher icon",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 242,
+    "question": "The…platform is the product of cooperation between the Al-Alfi Foundation for Human and Social Development, the Ministry of Higher Education. / المنصة .... نتاج التعاون بين مؤسسة الألفي للتنمية الإنسانية والاجتماعية ووزارة التعليم العالي.",
+    "answer": "Ejada",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 243,
+    "question": "When you click on the name of the magazine or periodical in WOS, the impact factor of the magazine or periodical is displayed. / عند الضغط على اسم المجلة أو الدورية في WOS يتم عرض معامل تأثير المجلة أو الدورية.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 244,
+    "question": "The Arabic Index for reference Citations enables you to write search terms in Arabic only. (Arabic and English) / يمكنك الكشاف (الفهرس) العربي للاستشهادات المرجعية من كتابة مصطلحات البحث باللغة العربية فقط.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 245,
+    "question": "All Photos posted on Unsplash are free to copy, modify distribute including for commercial purposes / جميع الصور المنشورة على Unsplash قابلة للنسخ والتعديل والتوزيع مجاناً، بما في ذلك الأغراض التجارية",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 246,
+    "question": "Used as a port to connect high-definition TVs. / يستخدم كمنفذ لتوصيل أجهزة التلفاز عالية الوضوح.",
+    "answer": "HDMI",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 247,
+    "question": "The DHCP protocol uses a static IP address for the client device. (Dynamic) / يستخدم بروتوكول DHCP عنوان IP ثابتاً لجهاز العميل.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 248,
+    "question": "VGA port used in displays with high-resolution image quality. (تقل جودة الصورة) / منفذ VGA يُستخدم في شاشات العرض ذات جودة صورة عالية الدقة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 249,
+    "question": "Leased lines are the best option for Individuals who require speed and high reliability. (large companies, institutions and universities) / الخطوط المؤجرة هي الخيار الأفضل للأفراد الذين يحتاجون إلى السرعة والموثوقية العالية.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 250,
+    "question": "Each octet of an IP address can hold ... value / يمكن لكل ثماني بتات من عنوان IP أن تحتوي على ... قيمة",
+    "answer": "256",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 251,
+    "question": "What is the used address to connect to an Ethernet network. / ما هو العنوان المستخدم للاتصال بشبكة Ethernet.",
+    "answer": "MAC address",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 252,
+    "question": "UDP protocol is responsible for accuracy and ensuring that the statement arrives correctly. (TCP) / بروتوكول UDP مسؤول عن الدقة والتأكد من وصول البيانات بشكل صحيح.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 253,
+    "question": "The network access layer defines the physical communication methods with the local network. / تحدد طبقة الوصول إلى الشبكة طرق الاتصال الفيزيائية مع الشبكة المحلية.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 254,
+    "question": "Windows platform is considered a type of … cloud. / تعتبر منصة ويندوز نوعاً من السحب ......",
+    "answer": "public",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 255,
+    "question": "Peer-to-peer networks require a server device with special specifications to provide the required service to other devices. (Client- Server) / تتطلب شبكات الند للند جهاز خادم بمواصفات خاصة لتقديم الخدمة المطلوبة للأجهزة الأخرى.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 256,
+    "question": "The central focal point of the star structure is the … / النقطة المحورية المركزية للهيكل النجمي هي ...",
+    "answer": "Switch",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 257,
+    "question": "Connecting devices are used to translate digital data into electrical signals. (Network Interface Card) / تُستخدم أجهزة التوصيل لترجمة البيانات الرقمية إلى إشارات كهربائية.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 258,
+    "question": "Open-source operating system widely used for servers and networks. / نظام تشغيل مفتوح المصدر يستخدم على نطاق واسع للخوادم والشبكات.",
+    "answer": "Linux",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 259,
+    "question": "The IP address consists of .... / يتكون عنوان الآي بي من ....",
+    "answer": "Four octets",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 260,
+    "question": "The hub is more commonly used than the switch collector. (أقل) / يتم استخدام الموزع بشكل أكثر شيوعاً من مجمع التبديل.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 261,
+    "question": "Amazon AWS is considered one of the most famous online software providers (البنية التحتية IaaS) / تعتبر Amazon AWS واحدة من أشهر مزودي البرامج عبر الإنترنت.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 262,
+    "question": "The IP address of the device must be in the same subnet as the local network / يجب أن يكون عنوان IP الخاص بالجهاز موجوداً في نفس الشبكة الفرعية مثل الشبكة المحلية.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 263,
+    "question": "The IP protocol is a link layer protocol. (Ethernet) / بروتوكول IP هو بروتوكول طبقة الربط.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 264,
+    "question": "... Used to transmit data over electromagnetic waves. / يستخدم لنقل البيانات عبر الموجات الكهرومغناطيسية.",
+    "answer": "Wireless Communications",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 265,
+    "question": "Helps in managing and maintaining the network, .... / يساعد في إدارة وصيانة الشبكة، ....",
+    "answer": "Wireshark",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 266,
+    "question": "The company .. developed the Network File System (NFS) / الشركة .. طورت نظام ملفات الشبكة (NFS)",
+    "answer": "Sun Microsystems",
+    "options": [],
+    "type": "إكمال فراغ"
+  },
+  {
+    "id": 267,
+    "question": "The coaxial cable consists of five parts to reduce signal interface. (Four) / يتكون الكابل المحوري من خمسة أجزاء لتقليل واجهة الإشارة.",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 268,
+    "question": "The collector is used to form the star structure of the grid. (الموزع أو المبدل أو الموجه) / يتم استخدام المجمع لتشكيل هيكل البنية النجمية للشبكة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 269,
+    "question": "The central connection point connects devices to form the star structure of the grid. / تقوم نقطة الاتصال المركزية بتوصيل الأجهزة لتكوين البنية النجمية للشبكة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 270,
+    "question": "When using DSL For internet connection the internet speed remains constant for customer. / باستخدام DSL تظل سرعة الإنترنت ثابتة للعميل.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 271,
+    "question": "When using DSL For internet connection the internet speed remains constant by customer. (For) / باستخدام DSL تظل سرعة الإنترنت ثابتة بواسطة العميل. (بواسطة مزود الخدمة للعميل)",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 272,
+    "question": "Cross-Connection is used to connect devices of the same type. / يتم استخدام التوصيل التقاطعي لتوصيل الأجهزة من نفس النوع.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 273,
+    "question": "Crossover Cable used to connect similar devices. / كابل Crossover يستخدم لتوصيل الأجهزة المتشابهة.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 274,
+    "question": "Steps of educational design and educational scenario writing (خطوات التصميم التعليمي وكتابة السيناريو التعليمي)",
+    "answer": "1. Formulating educational objectives (صياغة الأهداف التعليمية), 2. Determine the educational tasks and work required of the learner (تحديد المهمات والأعمال التعليمية المطلوبة من المتعلم), 3. Monitoring the learner and analyzing his behavior, Formulating behavioral statements for educational objectives (رصد المتعلم وتحديد سلوكياته وصياغة العبارات السلوكية للأهداف التربوية), 4. Preparing tests in specific standards (إعداد الاختبارات ضمن مقاييس محددة), 5. Developing general strategies that will guide the educational process (وضع استراتيجيات عامة تسير العملية التعليمية على ضوئها), 6. Preparing, organizing, and categorizing educational content sequentially and attractively (إعداد المحتوى التعليمي وتنظيمه وتبويبه بطريقة متسلسلة وجذابة), 7. Improving and developing educational courses (تجويد المقررات التعليمية وتطويرها), 8. Determine strategies and evaluation tools (تحديد استراتيجيات وأدوات التقويم)",
+    "options": [],
+    "type": "ترتيب"
+  },
+  {
+    "id": 275,
+    "question": "Steps to save the lesson in Articulate Storyline program (خطوات حفظ الدرس ببرنامج Articulate Storyline)",
+    "answer": "1. Open the program interface (افتح واجهة البرنامج), 2. Click on the File menu (إضغط على قائمة ملف), 3. Choose Save As command (إختر أمر حفظ باسم), 4. Specify the lesson name and save location (حدد اسم الدرس ومكان الحفظ), 5. Click Save (إضغط حفظ)",
+    "options": [],
+    "type": "ترتيب"
+  },
+  {
+    "id": 276,
+    "question": "You can add questions in the Articulate Storyline by choosing the ... menu. (يمكنك إضافة أسئلة داخل برنامج ارتكيولت باختيار قائمة ...)",
+    "answer": "Slides",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 277,
+    "question": "To control your workspace and the size of the project, in Articulate Storyline program you can use the ... menu. (للتحكم في مساحة العمل الخاصة بك وحجم المشروع في برنامج Articulate Storyline يتم من خلال قائمة ....)",
+    "answer": "Design",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 278,
+    "question": "Edmodo platform helps to Shorten time by placing a specific topic on the platform and then discussing it with the students. (منصة Edmodo تساعد على اختصار الوقت بوضع موضوع معين على المنصة ومناقشته مع الطلبة.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 279,
+    "question": "Adding shapes within Camtasia Studio from … menu. (إضافة أشكال داخل برنامج Camtasia Studio من قائمة ...)",
+    "answer": "Annotations",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 280,
+    "question": "We can access Canva by searching for... (يمكن أن نصل إلى Canva من خلال البحث عن ...)",
+    "answer": "Canva.com",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 281,
+    "question": "Converting to placeholder within Camtasia Studio from …. menu. (التحويل إلى عنصر نائب داخل برنامج Camtasia Studio من قائمة ...)",
+    "answer": "Edit",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 282,
+    "question": "In Canva, on the homepage you can search for any type of post or size you want to use, and there are various examples of this. (في برنامج Canva، في الصفحة الرئيسية يمكنك البحث عن أي نوع منشور، أو حجم تريد استخدامه، ويوجد أمثلة مختلفة لذلك.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 283,
+    "question": "In the Moodle program, the user login form / process looks like: (في برنامج الموودل يكون نموذج/شكل دخول المستخدم:)",
+    "answer": "Log in to LMS",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 284,
+    "question": "In Microsoft Teams, you can make video or audio calls and share your desktop through … (في برنامج مايكروسوفت تيمز لإجراء مكالمة مرئية أو مسموعة ومشاركة سطح المكتب من خلال ...)",
+    "answer": "أيقونات الكاميرا والميكروفون والمشاركة",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 285,
+    "question": "To adjust transitions between clips or scenes in Camtasia, use ... menu. (لضبط الانتقالات بين المشاهد أو المقاطع في برنامج Camtasia من قائمة ...)",
+    "answer": "Transitions",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 286,
+    "question": "The mobile version of Zoom lets you save meeting recordings only to the Zoom Cloud. (يتيح لك الإصدار المحمول من تطبيق Zoom حفظ تسجيلات الاجتماعات فقط على سحابة Zoom.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 287,
+    "question": "To export elements from the library within Camtasia Studio using the keyboard … (لتصدير عناصر من المكتبة داخل برنامج Camtasia Studio من خلال لوحة المفاتيح ...)",
+    "answer": "Ctrl + Shift + I",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 288,
+    "question": "Import package to library within Camtasia Studio (لاستيراد حزم من المكتبة داخل برنامج Camtasia Studio)",
+    "answer": "Ctrl + Shift + P",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 289,
+    "question": "To add a forum within the course in Moodle ... (لإضافة منتدى داخل المقرر في Moodle ...)",
+    "answer": "Add an activity",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 290,
+    "question": "To evaluate the teacher in the Mentimeter program … (لتقييم المعلم في برنامج Mentimeter ... استبيان أو استطلاع رأي)",
+    "answer": "New survey",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 291,
+    "question": "Zoom is a cloud-based video conferencing tool that allows you to easily host one-on-one or group virtual meetings. (Zoom هو أداة لعقد مؤتمرات الفيديو عبر الإنترنت تتيح لك استضافة اجتماعات افتراضية فردية أو جماعية بسهولة.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 292,
+    "question": "Zoom rooms are essentially virtual meeting rooms that anyone can access. (غرف زووم هي في الأساس غرف اجتماعات افتراضية يسمح لأي شخص بالوصول إليها.)",
+    "answer": "خطأ (أعضاء محددين - Specific members)",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 293,
+    "question": "Zoom Rooms are essentially virtual conference rooms where only specific members have access. (غرف زووم هي في الأساس غرف اجتماعات افتراضية لا يمكن الوصول إليها إلا من قبل أعضاء محددين.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 294,
+    "question": "To jump to the next media in Camtasia, use ... menu (View > Timeline > Next Clip). (للانتقال إلى الوسائط التالية في برنامج Camtasia، استخدم قائمة ...)",
+    "answer": "View",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 295,
+    "question": "To jump to the beginning of the timeline in Camtasia Studio (للانتقال إلى بداية الخط الزمني في برنامج Camtasia Studio)",
+    "answer": "Ctrl + Home",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 296,
+    "question": "To jump to end of timeline in Camtasia Studio (للانتقال إلى نهاية الخط الزمني في برنامج Camtasia Studio)",
+    "answer": "Ctrl + End",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 297,
+    "question": "To jump to next animation in Camtasia Studio (للانتقال إلى الرسوم المتحركة التالية في برنامج Camtasia Studio)",
+    "answer": "Alt + I",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 298,
+    "question": "To jump to previous animation in Camtasia Studio (للانتقال إلى الرسوم المتحركة السابقة في برنامج Camtasia Studio)",
+    "answer": "Shift + I",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 299,
+    "question": "To create a new project in Camtasia Studio (لإنشاء مشروع جديد في برنامج Camtasia Studio)",
+    "answer": "Ctrl + N",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 300,
+    "question": "To open a project in Camtasia Studio (لفتح مشروع في برنامج Camtasia Studio)",
+    "answer": "Ctrl + O",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 301,
+    "question": "To save a project in Camtasia Studio (لحفظ مشروع في برنامج Camtasia Studio)",
+    "answer": "Ctrl + S",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 302,
+    "question": "To add effects to slides from the menu .... (لإضافة تأثيرات للشرائح من قائمة ....)",
+    "answer": "Transitions",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 303,
+    "question": "The … is the academic supervisor in the instructional design process. (هو المشرف الأكاديمي في عملية التصميم التعليمي.)",
+    "answer": "Expert (SME)",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 304,
+    "question": "You can hide activity in Moodle. (يمكنك إخفاء النشاط في موودل.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 305,
+    "question": "In Articulate Storyline, you can find the publish icon in ... menu. (في Articulate Storyline، يمكنك العثور على أيقونة النشر في قائمة ...)",
+    "answer": "Home",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 306,
+    "question": "Canva includes a lot of ready – made graphic. (يتضمن Canva الكثير من الرسومات الجاهزة.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 307,
+    "question": "There are ….. forms for long shot. (هناك ... نماذج للقطة البعيدة.)",
+    "answer": "3",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 308,
+    "question": "Camtasia studio program provide full HD resolution. (يوفر برنامج Camtasia studio دقة Full HD.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 309,
+    "question": "Canva provide a free content Calander. (يوفر Canva تقويماً مجانياً للمحتوى (للاشتراكات المدفوعة).)",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 310,
+    "question": "MOODLE program is based on PHP program language. (يعتمد برنامج MOODLE على لغة البرمجة PHP.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 311,
+    "question": "Canva allows you to upload your own items. (يسمح لك Canva بتحميل العناصر الخاصة بك.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 312,
+    "question": "... allows the user to use formats such as Word in Moodle / MOODLE allow the user to use formats such as word by using …. (يسمح للمستخدم باستخدام تنسيقات مثل Word في Moodle باستخدام ...)",
+    "answer": "Html block",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 313,
+    "question": "The ... Block shows messages sent to you from the rest of the subscribers in moodle / You can see message from the rest of the subscribers in …… block. (صندوق (كتلة) ... يعرض لك الرسائل المرسلة إليك من بقية المشتركين في مودل.)",
+    "answer": "Messages",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 314,
+    "question": "When designing educational courses, the advisement is uses very close –up shot. (عند تصميم الدورات التعليمية، ينصح باستخدام اللقطة القريبة جداً.)",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 315,
+    "question": "Log in block is the responsibility of the manager. (حظر تسجيل الدخول هي مسؤولية المدير.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 316,
+    "question": "You can insert stickers in MOODLE. (يمكنك إدراج الملصقات في MOODLE.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 317,
+    "question": "To upload a folder to the Moodle, select … / MOODLE enable you to upload important content using … (لتحميل مجلد إلى Moodle، حدد ...)",
+    "answer": "Resources",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 318,
+    "question": "… is used when filming dialogue between two people. (يستخدم ... عند تصوير حوار بين شخصين.)",
+    "answer": "Identical shot",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 319,
+    "question": "When split video to two parts by using Camtasia studio, you can edit each part separately. (عند تقسيم الفيديو إلى جزئين باستخدام Camtasia studio، يمكنك تحرير كل جزء على حدة.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 320,
+    "question": "You can add a question in Articulate storyline. (يمكنك إضافة سؤال في Articulate Storyline.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 321,
+    "question": "We can preview project from … tab. (يمكننا معاينة المشروع من علامة التبويب ...)",
+    "answer": "Production settings (preview)",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 322,
+    "question": "… is used to change the character state in Articulate Storyline / You can edit characters stats in Articulate storyline by using … (يستخدم ... لتغيير حالة الشخصية في Articulate Storyline باستخدام ...)",
+    "answer": "Time line",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 323,
+    "question": "Moodle is open-source software and is distributed under the GNU (General Public License). (Moodle هو برنامج مفتوح المصدر ويتم توزيعه بموجب رخصة GNU العامة.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 324,
+    "question": "Gives you basic editing tools in Camtasia studio. (يوفر لك أدوات التحرير الأساسية في Camtasia studio.)",
+    "answer": "Time line Toolbar",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 325,
+    "question": "To execute the Record command in Adobe Captivate, click ... (لتنفيذ أمر التسجيل في Adobe Captivate، انقر فوق ...)",
+    "answer": "Snap to fit",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 326,
+    "question": "You should not photograph the movement with a very close-up shot because it magnifies everything, and the body must be placed outside the frame or the focus of the lens. (لا يجب تصوير الحركة بلقطة قريبة جداً لأنها تعمل على تكبير كل شيء، ويكون الجسم خارج الإطار أو خارج بؤرة العدسة.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 327,
+    "question": "You can hide messages in MOODLE. (يمكنك إخفاء الرسائل في MOODLE.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 328,
+    "question": "Icon (forums) is located in block activities in Moodle. (أيقونة (المنتديات) موجودة في كتلة الأنشطة في موودل.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 329,
+    "question": "You can record a video in Camtasia Recorder by using record button from ... (يمكنك تسجيل مقطع فيديو في Camtasia Recorder باستخدام زر التسجيل من ...)",
+    "answer": "Properties",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 330,
+    "question": "Moodle is open-source software and is distributed under the GNP. (GNU). (Moodle هو برنامج مفتوح المصدر ويتم توزيعه بموجب رخصة GNP. (GNU))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 331,
+    "question": "You can add questions in Articulate storyline by choosing a slides list. (يمكنك إضافة أسئلة في Articulate Storyline عن طريق اختيار قائمة شرائح.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 332,
+    "question": "Editing dimensions dialog by selecting … (تحرير أبعاد مربع حوار عن طريق اختيار ...)",
+    "answer": "File > Project Settings",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 333,
+    "question": "Meetings can be recorded in the Zoom application via 'Record' icon in the Zoom toolbar. (يمكن تسجيل الاجتماعات في تطبيق زووم عبر أيقونة 'تسجيل' في شريط أدوات Zoom.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 334,
+    "question": "Camtasia studio requires Adobe After Effects (يتطلب برنامج Camtasia studio برنامج Adobe After Effects)",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 335,
+    "question": "We could add e-mail address to google contacts. (يمكننا إضافة عنوان البريد الإلكتروني إلى جهات اتصال Google.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 336,
+    "question": "Cloud based PowerPoint differs from desktop one in that it couldn't apply a unified design to all. (يختلف PowerPoint المستند إلى السحابة عن PowerPoint المستند إلى سطح المكتب في أنه لا يمكنه تطبيق تصميم موحد على الجميع.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 337,
+    "question": "Cloud based presentation (work) previously made can be opened from any device, by web browser. (log in to your Microsoft account) (يمكن فتح العرض التقديمي المستند إلى السحابة الذي تم إجراؤه مسبقاً من أي جهاز عبر متصفح الويب.)",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 338,
+    "question": "Sway is a new app from Microsoft used to share personal presentations, files. (Sway هو تطبيق جديد من مايكروسوفت يستخدم لمشاركة العروض التقديمية الشخصية والملفات.)",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 339,
+    "question": "Canva. is considered one of the cloud services in the field of design. (تعتبر كانفا إحدى الخدمات السحابية في مجال التصميم.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 340,
+    "question": "… button to open a last worked file of Canva. (زر ... لفتح آخر ملف تم العمل عليه في كانفا.)",
+    "answer": "Projects",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 341,
+    "question": "We could share a video from google photos. (يمكننا مشاركة مقطع فيديو من صور جوجل.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 342,
+    "question": "We could edit the name of file of google drawing from … (يمكننا تعديل اسم ملف رسم جوجل من ...)",
+    "answer": "Untitled drawing",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 343,
+    "question": "Storage size of google drive is 25 gigabytes. (15) (حجم التخزين في جوجل درايف 25 جيجا بايت. (15))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 344,
+    "question": "It allows ... access to the tools required to build and manage mobile applications via the web without entering into or maintaining the infrastructure. (تتيح .... الوصول إلى الأدوات المطلوبة لبناء التطبيقات المتنقلة عبر الويب وإدارتها دون الدخول في البنية التحتية.)",
+    "answer": "Platforms as a service (PaaS)",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 345,
+    "question": "Artificial intelligence is ... (الذكاء الاصطناعي عبارة عن ...)",
+    "answer": "Platform as a service",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 346,
+    "question": "All of the following are cloud computing services except … (جميع ما يلي هي خدمات الحوسبة السحابية باستثناء ...)",
+    "answer": "Cisco",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 347,
+    "question": "We could export contact on google as …. (يمكننا تصدير جهات الاتصال على جوجل كـ ....)",
+    "answer": "CSV",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 348,
+    "question": "When you log in to One Drive with a work or educational institution account, the items in your account will be deleted Recycle Bin automatically after … (عند تسجيل الدخول لون درايف بحساب عمل أو مؤسسة تعليمية يتم حذف العناصر الموجودة في سلة المحذوفات تلقائياً بعد ...)",
+    "answer": "93 days",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 349,
+    "question": "Cloud computing enables access to computing resources solely via the internet. (تتيح الحوسبة السحابية الوصول إلى موارد الحوسبة عبر الإنترنت فقط.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 350,
+    "question": "Google Apps is considered … (تعتبر تطبيقات جوجل ...)",
+    "answer": "SaaS",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 351,
+    "question": "Zendesk is a cloud computing program that provides Paas. (SaaS) (برنامج Zendesk يعد من برامج الحوسبة السحابية التي تقدم خدمة Paas. (SaaS))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 352,
+    "question": "Add a photo album to the Google photo service, click on … (لإضافة ألبوم صور في خدمة جوجل المقدمة للصور اضغط على ...)",
+    "answer": "Import",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 353,
+    "question": "The cloud backend consists of … layers. (تتكون الواجهة الخلفية للسحابة من ... طبقات.)",
+    "answer": "6",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 354,
+    "question": "Alibaba is a cloud service. (يعتبر علي بابا من خدمات السحابة.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 355,
+    "question": "Digital transformation involves the integration of digital technology across all aspects of a business. (يتضمن التحول الرقمي دمج التكنولوجيا الرقمية في جميع جوانب الأعمال.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 356,
+    "question": "Excel Online lacks a Data tab for ... (يفتقر برنامج Excel عبر الإنترنت في تبويب البيانات إلى ...)",
+    "answer": "importing data from databases",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 357,
+    "question": "You can search for anything you want through File Explorer. (يمكنك البحث عن أي شيء تريده عن طريق مستكشف الملفات.)",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 358,
+    "question": "You can search for anything you want in your Google Photos, such as bags, for example. (يمكنك البحث عن أي شيء تريده في صور جوجل الخاصة بك كالحقائب مثلاً.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 359,
+    "question": "You can search for a bag Photo in Google Photos service by typing ... (يمكنك البحث عن صورة حقيبة في خدمة جوجل المقدمة بالصور بكتابة ...)",
+    "answer": "bag",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 360,
+    "question": "You can add photo to contact through pressing …. (يمكنك إضافة صورة إلى جهة الاتصال من خلال الضغط على ....)",
+    "answer": "Add photo",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 361,
+    "question": "Google storage is divided equally between Gmail, Google Drive, and Google Photo. (Share storage) (تقسم السعة التخزينية لجوجل بالتساوي على Gmail و Google Drive و Google Photo.)",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 362,
+    "question": "The Heroku platform is a type of cloud computing that provides its services in the form of SaaS. (PaaS) (منصة Heroku هي نوع من الحوسبة السحابية التي تقدم خدماتها في شكل SaaS. (PaaS))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 363,
+    "question": "Cloud computing contains ... basic components (الحوسبة السحابية تحوي .... مكونات أساسية)",
+    "answer": "3",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 364,
+    "question": "you can create a unified design for the entire presentation using Master Slides, in the …… version of PowerPoint. (يمكنك إنشاء تصميم موحد للعرض التقديمي بأكمله باستخدام Master Slides في إصدار .... من PowerPoint.)",
+    "answer": "Desktop",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 365,
+    "question": "A Microsoft account enables you to work on more specialized programs such as Sway to create interactive reports and presentations. (يمكنك حساب Microsoft من العمل على برامج أكثر تخصصاً مثل Sway لإنشاء تقارير وعروض تقديمية تفاعلية.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 366,
+    "question": "You can get access to your stored projects list on Canva through pressing … (يمكنك الوصول إلى قائمة مشاريعك المخزنة على Canva من خلال الضغط على زر ...)",
+    "answer": "Projects",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 367,
+    "question": "Salesforce is a cloud computing software that provides a PaaS service. (SaaS) (برنامج Salesforce يعد من برامج الحوسبة السحابية التي تقدم خدمة PaaS. (SaaS))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 368,
+    "question": "Represents .... the cloud layer of users (تمثل .... للسحابة طبقة المستخدمين)",
+    "answer": "The front end (face)",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 369,
+    "question": "You can get images from Google Drawings as a PDF file. (يمكنك الحصول على صور من Google Drawings كملف pdf.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 370,
+    "question": "In desktop PowerPoint you can create a unified design for the entire presentation using Master Slides, but this is not available in the cloud version of PowerPoint. (في برنامج PowerPoint لسطح المكتب، يمكنك إنشاء تصميم موحد للعرض التقديمي بأكمله باستخدام الشرائح الرئيسية، ولكن هذا غير متوفر في الإصدار السحابي.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 371,
+    "question": "The Heroku platform allows work teams to participate in preparing software projects without having to be in the same place. (تسمح منصة Heroku لفرق العمل المشاركة في إعداد المشاريع البرمجية دون الحاجة للتواجد في نفس المكان.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 372,
+    "question": "OneDrive comes pre-installed on Windows 7. (10) (يكون OneDrive مثبتاً مسبقاً على نظام تشغيل ويندوز 7. (10))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 373,
+    "question": "you can create a unified design for the entire presentation using Master Slides, in the cloud version of PowerPoint. (desktop) (يمكنك إنشاء تصميم موحد للعرض التقديمي بأكمله باستخدام Master Slides في الإصدار السحابي من PowerPoint. (سطح المكتب))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 374,
+    "question": "Print is improved now where you can print full-page slides, slides with notes, or handouts with three slides per page by PowerPoint Online. (تم تحسين الطباعة الآن حيث يمكنك طباعة شرائح بصفحة كاملة، أو شرائح تحتوي على ملاحظات، أو نشرات تحتوي على ثلاث شرائح في كل صفحة بواسطة PowerPoint Online.)",
+    "answer": "صح",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 375,
+    "question": "Free Microsoft OneDrive storage (السعة التخزينية المجانية لحساب مايكروسوفت OneDrive)",
+    "answer": "5 GB",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 376,
+    "question": "Previously, PowerPoint Online was used to let you print many slides per page, including headers and footers. (only one) (سابقاً (الإصدارات القديمة) كان برنامج PowerPoint Online يسمح لك بطباعة عدة شرائح لكل صفحة، بما في ذلك الرؤوس والتذييلات. (واحدة فقط))",
+    "answer": "خطأ",
+    "options": [
+      "صح",
+      "خطأ"
+    ],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 377,
+    "question": "To restore an older version of a file in OneDrive you can use version history. Right-click on the file and choose ….. (لاستعادة إصدار أقدم من ملف في OneDrive يمكنك استخدام محفوظات الإصدارات. انقر بزر الماوس الأيمن على الملف واختر .....)",
+    "answer": "Version History",
+    "options": [],
+    "type": "إكمال فراغات"
+  },
+  {
+    "id": 378,
+    "question": "Which cloud service provider is known for its extensive suite of tools to support digital transformation? ما هو مزود الخدمة السحابية المعروف بمجموعته الواسعة من الأدوات لدعم التحول الرقمي؟",
+    "answer": "Microsoft Azure",
+    "options": [],
+    "type": "سؤال قصير"
+  },
+  {
+    "id": 379,
+    "question": "To rename the Google Drawings file, you can press the text area \"Untitled drawing\", then press \"Enter\" in your keyboard. لإعادة تسمية ملف رسومات، يمكنك الضغط على منطقة النص \"رسم بدون عنوان\"، ثم الضغط على \"Enter\" في لوحة المفاتيح لديك.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 380,
+    "question": "You can back up Photos, videos, and screenshots to OneDrive automatically, through the settings by clicking on ... يمكن مزامنة الصور ومقاطع الفيديو ولقطات الشاشة وحفظها تلقائياً على OneDrive من خلال الإعدادات عن طريق الضغط على ...",
+    "answer": "Manage Backup",
+    "options": [],
+    "type": "إكمال"
+  },
+  {
+    "id": 381,
+    "question": "Auto-save feature for photo, video, and screenshot folders automatically backs up files if you have an Internet connection and there is storage space in your OneDrive account. تتيح لك ميزة الحفظ التلقائي لمجلدات الصور والفيديو ولقطات الشاشة إجراء نسخ احتياطي للملفات تلقائياً إذا كان لديك اتصال بالإنترنت وكانت هناك مساحة تخزين في حساب OneDrive الخاص بك.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 382,
+    "question": "You can automatically save images and videos to your Google account by enabling backup. بإمكانك حفظ الصور ومقاطع الفيديو تلقائياً في حساب جوجل الخاص بك عن طريق تمكين النسخ الاحتياطي.",
+    "answer": "صح",
+    "options": [],
+    "type": "صح وخطأ"
+  },
+  {
+    "id": 383,
+    "question": "You can create a drawing using Google Drive. (Drawings) يمكن إنشاء رسم بواسطة جوجل درايف. (رسومات)",
+    "answer": "خطأ",
+    "options": [],
+    "type": "صح وخطأ"
+  }
+]
