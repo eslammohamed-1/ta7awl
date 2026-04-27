@@ -251,14 +251,14 @@ function ingestQuestions(data) {
 
 async function tryFetchQuestions() {
   try {
-    const res = await fetch("questions.json", { cache: "no-store" });
+    const res = await fetch("quiz-app/questions.json", { cache: "no-store" });
     if (!res.ok) throw new Error(String(res.status));
     const data = await res.json();
     ingestQuestions(data);
     rebuildActiveList(false);
   } catch {
     els.loadStatus.textContent =
-      "لم يُحمّل questions.json. شغّل خادماً محلياً من مجلد التطبيق (مثلاً npx serve).";
+      "لم يُحمّل quiz-app/questions.json. شغّل خادماً من جذر المشروع (مثلاً npx serve).";
     els.loadStatus.classList.add("muted");
     render();
   }
@@ -341,7 +341,7 @@ function render() {
     els.qId.textContent = "#";
     els.qText.textContent =
       allQuestions.length === 0
-        ? "تأكد أن questions.json بجانب الصفحة وشغّل خادماً محلياً من مجلد التطبيق."
+        ? "تأكد أن quiz-app/questions.json موجود وشغّل خادماً من جذر المشروع."
         : "لا توجد أسئلة تطابق الفلتر الحالي. غيّر القسم أو نوع السؤال.";
     els.qInteractive.innerHTML = "";
     els.btnPrev.disabled = true;
